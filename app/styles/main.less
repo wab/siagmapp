@@ -18,14 +18,12 @@ h1, h2, h3, h4 {
     color: #999;
     min-height: 4em;
 }
-#mainheader {
-    padding:80px 0;
+.header {
+    background: url(../images/stripe-header.png);
 }
-#mainheader small, #mainheader .lead {
-    color: #fff;
-}
-.accueil #mainheader {
-    background: #999 url(../images/accueil.jpg) no-repeat center; 
+
+.mainheader {
+    background: url(../images/header.jpg) no-repeat center; 
     background-size: cover; 
     min-height: 60vh;
 }
@@ -38,18 +36,26 @@ section {
     padding: 40px 0;
 }
 .main {
-    margin-bottom:  20px;
+    padding-bottom:  20px;
+    background: url(../images/bg.jpg) no-repeat center bottom;
+    background-size: 100%;
 }
-#infospratiques {
-    background:  #e0e0e0;
-}
-#infospratiques h2 {
-    font-size: 20px;
+.infos-pratiques {
+    background:  url(../images/stripe-footer.png);
+    .container {
+        background: url(../images/bg-footer.png) no-repeat top left;
+    }
 }
 #footer {
     background:  #ccc;
-    padding: 40px 0;}
+    padding: 30px 0;
+}
+
+.mm-menu {
+    background-image: linear-gradient(to bottom, #4075af 0%,#2b4775 100%);
+}
 
 .navside img {
     max-height:  30px;
 }
+
