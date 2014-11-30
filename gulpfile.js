@@ -8,6 +8,7 @@ var $ = require('gulp-load-plugins')();
 
 gulp.task('styles', function () {
     return gulp.src('app/styles/main.less')
+        .pipe($.plumber())
         .pipe($.sourcemaps.init())
         .pipe($.less())
         .pipe($.autoprefixer('last 1 version'))
@@ -18,6 +19,7 @@ gulp.task('styles', function () {
 
 gulp.task('scripts', function () {
     return gulp.src('app/scripts/**/*.js')
+        .pipe($.plumber())
         .pipe($.jshint())
         .pipe($.jshint.reporter(require('jshint-stylish')))
         .pipe($.size());
