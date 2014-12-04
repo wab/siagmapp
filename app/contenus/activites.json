@@ -1,0 +1,223 @@
+[
+	{
+		"id" : "kayak",
+		"order" : 0,
+		"title" :"Aviron / Kayak / Canoë / SUP",
+		"contenu" : {
+			"chapo": "Espace maritime idéal pour le kayak, l’aviron, le canoë et depuis peu le Stand Up Paddle, le golfe accueille nombre de pratiquants, en club ou non affiliés.",
+			"pratiques": [
+				"Planifiez votre sortie : la durée et la difficulté de l’itinéraire doivent être adaptées au niveau des pratiquants",
+				"Ne piétinez pas les herbiers de zostère lors de vos sorties",
+				"Profitez pleinement des paysages mais faîtes attention à ne pas déranger les oiseaux",
+				"Ramenez vos déchets sur le continent"
+			],
+			"regles" : [
+				"Ne débarquez pas sur les îles et îlots bénéficiant d’un arrêté préfectoral de protection de biotope, entre le 15 avril et le 31 août, et ne pénétrez pas dans les îles privées",
+				"Ne remontez pas les rivières du Vincin et de Noyalo, ainsi que les zones de Tascon et Truscat, afin d’assurer la tranquillité des oiseaux",
+				"Respectez les règles de barre"
+			],
+			"securite" : [
+				"Évitez de naviguer seul",
+				"Soyez équipé d’un gilet de sauvetage",
+				"Respectez les élevages de coquillages, balisés par des perches"
+			],
+			"autre" : "La navigation au-dessus des parcs présente des dangers pour les navires et les personnes"
+		},
+
+		"image" : {
+			"src" : "images/thumb.jpg",
+			"caption" : "légende"
+		}
+		
+	},
+	{
+		"id" : "kitesurf",
+		"order" : 1,
+		"title" :"Kitesurf interdit",
+		"contenu" : {
+			"chapo": "Le kitesurf est un sport nautique en pleine expansion sur le littoral, il est pratiqué dans le golfe bien qu’interdit par un arrêté préfectoral de 2006.",
+			"pratiques": [
+				"Adaptez la durée et la distance de votre sortie à votre niveau",
+				"Ne dérangez pas les oiseaux au repos"
+			],
+			"regles" : [
+				"Ne pratiquez pas le kitesurf dans le golfe du Morbihan car c’est interdit Privilégiez les sites sur la frange atlantique.",
+				"Ne pratiquez pas votre activité à plus de 2 milles d’un abri"
+			],
+			"securite" : [
+				"Pratiquez d’abord en club si vous êtes débutant",
+				"Ne quittez pas votre planche en cas de difficulté et attendez les secours",
+				"Soyez très attentif à la météo, à la direction du vent et à l’évolution des nuages",
+				"Respectez les consignes de sécurité"
+			],
+			"autre" : "L’ouverture d’une zone autorisée à la pratique du kitesurf, dans le golfe du Morbihan, est actuellement en discussion. L’information sera diffusée sur <a href='htpp://www.golfe-morbihan.fr'>www.golfe-morbihan.fr</a>."
+		},
+
+		"image" : {
+			"src" : "images/thumb.jpg",
+			"caption" : "légende"
+		}
+		
+	},
+	{
+		"id" : "peche-pied",
+		"order" : 2,
+		"title" :"Pêche à pied",
+		"contenu" : {
+			"chapo": "Très pratiquée à l’intérieur du golfe et sur sa frange atlantique de Saint-Philibert à Damgan, le nombre de pêcheurs lors d’une grande marée peut atteindre 10 000 pratiquants selon un comptage réalisé le 23 août 2013 !",
+			"pratiques": [
+				"Ne prélevez que ce dont vous avez besoin pour votre consommation familiale et immédiate, afin de préserver la ressource, sans dépasser les quantités autorisées par jour et par personne (60 huîtres, 100 palourdes…)",
+				"Remettez en place les cailloux retournés et les coquillages trop petits"
+			],
+			"regles" : [
+				"Respectez les tailles minimales autorisées pour les coquillages *",
+				"Utilisez des outils autorisés **",
+				"Ne pêchez qu’à plus de 15 m des parcs ostréicoles, balisés par des perches en bois",
+				"Respectez l’interdiction de pêcher dans les herbiers de zostères"
+			],
+			"securite" : [
+				"Vérifiez les horaires de marée afin de ne pas être surpris par la marée montante",
+				"Ne vous aventurez pas sur une vasière trop mouvante, au risque de rester bloqué",
+				"Renseignez-vous sur les fermetures sanitaires"
+			],
+			"autre" : "Les pêcheurs recherchent en priorité les huîtres plates et creuses, les palourdes, les moules et les crevettes."
+		},
+
+		"image" : {
+			"src" : "images/thumb.jpg",
+			"caption" : "légende"
+		}
+		
+	},
+	{
+		"id" : "peche-embarquee",
+		"order" : 3,
+		"title" :"Pêche embarquée",
+		"contenu" : {
+			"chapo": "Courante chez les plaisanciers à moteur, émergente chez les kayakistes, elle évolue vers la pêche à la ligne à la dérive au détriment de la pêche traditionnelle au filet ou au casier.",
+			"pratiques": [
+				"Ne prélevez strictement que pour votre consommation familiale et immédiate, afin de préserver la ressource",
+				"Ne jeter pas d’appâts dans l’eau, cela perturbe les cycles naturels de la faune et de la flore"
+			],
+			"regles" : [
+				"N’utilisez que les engins de pêche autorisés",
+				"Respectez les tailles de capture minimale *",
+				"Coupez la partie inférieure de la nageoire caudale des poissons pêchés pour éviter la vente illégale",
+				"Pêchez en laissant votre moteur en marche",
+				"Respectez le matériel de pêche des professionnels et des plaisanciers",
+				"Ne pêchez pas à la dérive dans les chenaux du 1er juin au 31 août entre 10h et 19h",
+				"Ne pêchez pas dans la zone de plongée au sud de l’Ile Longue"
+			],
+			"securite" : [
+				"Le matériel de sécurité à bord doit être en état de fonctionnement"
+			],
+			"autre" : "<p>La pêche à la dérive se pratiquant principalement dans les chenaux, elle demande la vigilance des pêcheurs pour la sécurité des autres usagers du plan d’eau.</p><p>(*)</p><ul><li>Bar 42 cm</li><li>Dorade 23 cm</li><li>Mulet 30 cm</li></ul>"
+		},
+
+		"image" : {
+			"src" : "images/thumb.jpg",
+			"caption" : "légende"
+		}
+		
+	},
+	{
+		"id" : "plaisance-moteur",
+		"order" : 4,
+		"title" :"Plaisance à Moteur",
+		"contenu" : {
+			"chapo": "La plaisance à moteur s’est développée dans le golfe, s’orientant notamment vers des mises à l’eau à la journée. Les voiliers sont plus présents dans les zones de mouillage bonnes pratiques",
+			"pratiques": [
+				"Utilisez la carte marine 7137 L golfe du Morbihan du SHOM",
+				"Ne versez pas de carburant en mer en remplissant le réservoir",
+				"Ne jetez pas votre ancre dans un herbier de zostères",
+				"Ramenez vos déchets sur le continent réglementation",
+				"Respectez les vitesses maximales autorisées : 5 nœuds dans la bande des 300 mètres, 10 nœuds ailleurs",
+				"Ne débarquez pas sur les îles et îlots bénéficiant d’un arrêté préfectoral de protection de biotope, entre le 15 avril et le 31 août, et ne pénétrez pas dans les îles privées",
+				"Ne remontez pas les rivières du Vincin et de Noyalo, ainsi que les zones de Tascon et Truscat, afin d’assurer la tranquillité des oiseaux",
+				"Respectez les règles de barre sécurité",
+				"Attachez votre coupe-circuit au poignet pour couper le moteur en cas de chute",
+				"Le matériel de sécurité à bord doit être en état de fonctionnement",
+				"Respectez les élevages de coquillages, balisés par des perches."
+			],
+			
+			"autre" : "<p>La navigation au-dessus des parcs présente des dangers pour les navires et les personnes</p><p>Pour les remorques des bateaux transportables, utilisez les parkings prévus à cet effet dans les communes. Renseignez-vous dans les capitaineries</p>"
+		},
+
+		"image" : {
+			"src" : "images/thumb.jpg",
+			"caption" : "légende"
+		}
+		
+	},
+	{
+		"id" : "plaisance-voile",
+		"order" : 5,
+		"title" :"Plaisance à Voile",
+		"image" : {
+			"src" : "images/thumb.jpg",
+			"caption" : "légende"
+		}
+		
+	},
+	{
+		"id" : "voile-legere",
+		"order" : 6,
+		"title" :"Voile légère (catamaran, planche à voile, dériveur)",
+		"image" : {
+			"src" : "images/thumb.jpg",
+			"caption" : "légende"
+		}
+		
+	},
+	{
+		"id" : "plongee",
+		"order" : 7,
+		"title" :"Plongée sous-marine",
+		"image" : {
+			"src" : "images/thumb.jpg",
+			"caption" : "légende"
+		}
+		
+	},
+	{
+		"id" : "conchyliculture",
+		"order" : 8,
+		"title" :"Conchyliculture",
+		"image" : {
+			"src" : "images/thumb.jpg",
+			"caption" : "légende"
+		}
+		
+	},
+	{
+		"id" : "peche-pied-pro",
+		"order" : 9,
+		"title" :"Pêche à pied professionelle",
+		"image" : {
+			"src" : "images/thumb.jpg",
+			"caption" : "légende"
+		}
+		
+	},
+	{
+		"id" : "peche-embarquee-pro",
+		"order" : 10,
+		"title" :"Pêche embarquée professionelle",
+		"image" : {
+			"src" : "images/thumb.jpg",
+			"caption" : "légende"
+		}
+		
+	},
+	{
+		"id" : "transport-maritime",
+		"order" : 11,
+		"title" :"Transport maritime",
+		"image" : {
+			"src" : "images/thumb.jpg",
+			"caption" : "légende"
+		}
+		
+	}
+
+]

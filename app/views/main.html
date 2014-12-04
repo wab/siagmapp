@@ -1,0 +1,22 @@
+<header class="mainheader">
+
+    <div class="sr-only">
+        <h1>Cap sur la petite mer</h1>
+        <h2>Golfe du Morbihan : Les bonnes pratiques</h2>
+    </div>
+
+</header>
+
+<!-- zone accès directs -->
+<section id="accesdirects" class="section">
+    <div class="container">
+        <div class="activity">
+            <div class="page-header">
+                <h1>Les activités</h1>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div ng-repeat="activite in activites" class="col-xs-6 col-sm-3 col-md-2 col-lg-2"><a href="#activite/{{activite.id}}" class="thumbnail"><img src="images/thumbs/{{activite.id}}.jpg" class="img-responsive"  /></a><p class="caption">{{activite.title}}</p></div>
+        </div>
+    </div>
+</section>
