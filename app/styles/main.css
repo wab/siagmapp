@@ -4151,3 +4151,22 @@ section {
 .navside img {
   max-height: 30px;
 }
+p > img.pull-left {
+  margin-right: 0.5em;
+}
+p:before,
+p:after {
+  content: " ";
+  display: table;
+}
+p:after {
+  clear: both;
+}
+p:before,
+p:after {
+  content: " ";
+  display: table;
+}
+p:after {
+  clear: both;
+}

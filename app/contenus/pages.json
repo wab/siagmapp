@@ -1,0 +1,37 @@
+[
+	{
+	 "id" : "a-propos",
+	 "title" : "Le parc naturel régional (pnr) du golfe du morbihan",
+	 "contenu" : "<p>Le golfe du Morbihan est reconnu pour la beauté de ses paysages, sa faune et sa flore exceptionnelles, la richesse de ses patrimoines naturels, culturels et architecturaux.</p><p>Plus de deux millions de touristes le visitent chaque année et en 40 ans sa population a doublé et ses espaces urbanisés ont été multipliés par huit. Cette attractivité apporte au territoire un développement économique dynamique mais aussi de multiples pressions pouvant le fragiliser.</p><p>Afin de parvenir au développement soutenable du golfe, le Parc Naturel Régional mène des actions permettant de préserver l’environnement et de soutenir les activités humaines (pêche, conchyliculture, agriculture, tourisme, loisirs nautiques, etc.).</p><p class='bg-primary'>Ce guide aborde l’ensemble des usages en mer du golfe. Il apporte des éléments relatifs aux pratiques, à la sécurité et à la réglementation en mer pour les activités de loisirs, ainsi qu’à la préservation de notre environnement. Les dernières pages présentent les principales activités maritimes professionnelles.</p>",
+	 "image" : {
+	 	"src" : "images/thumb.jpg",
+	 	"alt" : "alt",
+	 	"caption" : "légende"
+	 }
+	},
+	{
+	 "id" : "preservation-golfe",
+	 "title" : "Préservation du Golfe du Morbihan",
+	 "contenu" : "<p class='lead'>La Petite Mer - Ar Mor Bihan - a donné son nom au département.</p><p>Au cœur du golfe, avec ses 20 km de long et 15 km de large, elle ne communique avec le Morbraz que par un étroit passage.</p><p>Parsemée de dizaines d’îles et îlots, elle est brassée par les rivières d’Auray, du Vincin, de Vannes et de Noyalo.</p><p>Véritable écrin pour les activités maritimes professionnelles et de loisirs, le climat doux de la Petite Mer et ses forts courants de marées favorisent la richesse biologique.</p><p>Nous sommes nombreux à la parcourir : chacun d’entre nous doit agir pour que cet espace maritime exceptionnel soit préservé.</p>Le présent guide nous aide à la partager en bonne intelligence :</p><ul><li>Ne jetez rien à la mer (déchets, mégots, eaux noires et grises...)</li><li>Ramenez vos déchets ou mettez-les dans une benne appropriée lors de vos promenades</li><li>Ne provoquez pas de départs de feu involontaires en été</li><li>évitez de déranger les animaux, les oiseaux au repos</li><li>Ne cueillez pas les plantes, prenez-les en photo</li><li>Faites attention aux herbiers de zostères, ce sont des plantes marines très fragiles</li></ul><p>La zostère rend un certain nombre de services : pouponnière et zone d’alimentation pour les poissons, nourriture pour les bernaches, fixation des sédiments et frein à l’érosion - aussi il est important d’avoir le minimum d’impact sur elle. <br>Il en existe deux espèces : la naine et la marine.</p>",
+	 "image" : {
+	 	"src" : "images/thumb.jpg",
+	 	"caption" : "légende"
+	 }
+	},
+	{
+	 "id" : "consignes-securite",
+	 "title" : "consignes de sécurités",
+	 "contenu" : "<p class='lead'>Le golfe du Morbihan est réputé pour ses courants, dont celui de la Jument qui, dépassant parfois 9 nœuds, est l’un des plus rapides d’Europe. S’aventurer en toute sécurité sur cet espace maritime demande une bonne expérience de la navigation et la connaissance des particularités du golfe : les îles, la marée, le déplacement continu des bancs de sable, la présence de nombreux parcs conchylicoles et la multitude d’activités rendent la navigation subtile.</p><p>Pour votre sécurité et celle des autres navigants :</p><ul><li>Prévenez votre entourage de votre sortie en mer</li><li>Vérifiez la météo qui peut évoluer rapidement</li><li>Prenez la carte marine 7137 L golfe du Morbihan du SHOM</li>Vérifiez les horaires de marée (différents selon localisation) et les coefficients de marée</li><li>Emportez le matériel de sécurité obligatoire (brassières, source lumineuse...)</li><li> Vérifiez le bon fonctionnement de votre bateau ou embarcation</li><li>Respectez les vitesses maximales autorisées : 5 nœuds dans la bande des 300 m, 10 nœuds ailleurs</li><li>Respectez le balisage de navigation</li><li>Gardez les numéros d’urgence : canal 16 par VHF ou 02.97.55.35.35 pour le CRO SS Etel (Atlantique)</li></ul><p>Afin d’assurer de bonnes conditions de manœuvrabilité dans les forts courants du golfe, dans les chenaux de navigation situés à Gavrinis, Port-Blanc, la Pointe d’Arradon et Conleau, la vitesse est autorisée jusqu’à 10 nœuds.</p>",
+	 "image" : {
+	 	"src" : "images/thumb.jpg",
+	 	"caption" : "légende 1"
+	 }
+	},
+	{
+	 "id" : "mentions-legales",
+	 "title" : "Mentions Légales",
+	 "contenu" : "<p>mentions légales</p>"
+	}
+
+
+]

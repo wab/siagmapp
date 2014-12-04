@@ -15,20 +15,28 @@ siagmApp.config(['$routeProvider', function ($routeProvider) {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
-      .when('/page', {
+      .when('/page/:pageId', {
         templateUrl: 'views/page.html',
         controller: 'PageCtrl'
       })
-      .when('/activite', {
+      .when('/activite/:activiteId', {
         templateUrl: 'views/activite.html',
         controller: 'ActiviteCtrl'
+      })
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'ContactCtrl'
       })
       .otherwise({
         redirectTo: '/'
       });
   }
 ])
+
+.config(['snapRemoteProvider', function(snapRemoteProvider) {
+  snapRemoteProvider.globalOptions = {
+    disable: 'right',
+    maxPosition: 300,
+    tapToClose: 'true'
+  };
+}]);

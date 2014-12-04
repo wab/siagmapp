@@ -16,7 +16,7 @@
     <!-- endbuild -->
     
   </head>
-  <body ng-app="siagmApp" data-snap-ignore="true">
+  <body ng-app="siagmApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -24,8 +24,8 @@
     <div snap-drawer>
 
        <nav class="menuActivites" role="navigation" ng-controller="SnapmenuCtrl" ng-include="'views/snapmenu.html'" >
-           
-        </nav>
+       
+       </nav>
 
     </div>
 
@@ -34,7 +34,7 @@
         <!-- Add your site or application content here -->
         <div ng-include="'views/navigation.html'"></div>
 
-        <div ng-view=""></div>
+        <div ng-view="" role="main"></div>
 
         <div ng-include="'views/footer.html'"></div>
 
@@ -85,6 +85,8 @@
         <script src="scripts/controllers/navigation.js"></script>
         <script src="scripts/controllers/snapmenu.js"></script>
         <script src="scripts/services/datactivites.js"></script>
+        <script src="scripts/services/datapages.js"></script>
+        <script src="scripts/controllers/contact.js"></script>
         <!-- endbuild -->
 </body>
 </html>

@@ -1,17 +1,13 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name siagmAppApp.controller:PageCtrl
- * @description
- * # PageCtrl
- * Controller of the siagmAppApp
- */
-angular.module('siagmAppApp')
-  .controller('PageCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+siagmApp.controller('PageCtrl',  ['$scope', 'DataPages', '$routeParams',  
+	function ($scope, DataPages, $routeParams) {
+		
+		DataPages.getData(function(data) {
+			console.log('data pages loaded');
+			$scope.pages = data;
+		});
+		
+		$scope.pageId = $routeParams.pageId;
+
+	}]);

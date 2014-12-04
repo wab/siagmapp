@@ -1,1 +1,56 @@
-<p>This is the activite view.</p>
+<div class="container">
+
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+
+
+			<div class="page-activite" ng-repeat="page in activites | filter:{id:activiteId} ">
+
+				<h1>{{page.title}}</h1>
+
+				<p class="lead">
+					<img src="images/thumbs/{{page.id}}.jpg" width="120" height="120" class="pull-left">
+					{{page.contenu.chapo}}
+				</p>
+
+				<div ng-show="page.contenu.pratiques">
+
+					<h2>Bonnes pratiques</h2>
+					<ul>
+						<li ng-repeat="item in page.contenu.pratiques">{{item}}</li>
+					</ul>
+
+				</div>
+				
+				<div ng-show="page.contenu.regles">
+
+					<h2>Règlementation</h2>
+					<ul>
+						<li ng-repeat="item in page.contenu.regles">{{item}}</li>
+					</ul>
+
+				</div>
+				
+				<div ng-show="page.contenu.securite">
+
+					<h2>Sécurité</h2>
+					<ul>
+						<li ng-repeat="item in page.contenu.securite">{{item}}</li>
+					</ul>
+
+				</div>
+
+				<div ng-show="page.contenu.autre" ng-bind-html="page.contenu.autre"></div>
+
+				<figure>
+					<img src="{{page.image.src}}" class="img-responsive">
+					<figcaption class="text-muted">{{page.image.caption}}</figcaption>
+				</figure>
+
+			</div>
+		
+		</div>
+
+	</div>
+
+</div>
