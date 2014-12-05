@@ -116,19 +116,6 @@ module.exports = function (grunt) {
         files: {
           '<%= yeoman.app %>/styles/main.css': '<%= yeoman.app %>/styles/main.less'
         }
-      },
-      prod: {
-        options: {
-          paths: ['assets/css'],
-          cleancss: true,
-          modifyVars: {
-            imgPath: '"http://mycdn.com/path/to/images"',
-            bgColor: 'red'
-          }
-        },
-        files: {
-          'path/to/result.css': 'path/to/source.less'
-        }
       }
     },
 
@@ -331,7 +318,8 @@ module.exports = function (grunt) {
             '*.html',
             'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
-            'fonts/{,*/}*.*'
+            'fonts/{,*/}*.*',
+            'contenus/*.*'
           ]
         }, {
           expand: true,
@@ -422,6 +410,8 @@ module.exports = function (grunt) {
     'usemin',
     'htmlmin'
   ]);
+
+
 
   grunt.registerTask('default', [
     'newer:jshint',
