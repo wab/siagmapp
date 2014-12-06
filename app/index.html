@@ -6,20 +6,15 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     
-    <!-- build:css styles/main.css -->
+    <!-- build:css styles/main.min.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css styles/vendor.css -->
+
+    <!-- build:css(.) styles/vendor.min.css -->
     <!-- inject:css -->
-    
-    
-    
-    <link rel="stylesheet" href="/bower_components/angular-snap/angular-snap.css">
-    
-    
-    
+    <link rel="stlesheet" href="/bower_components/angular-snap/angular-snap.css">
     <!-- endinject -->
     <!-- endbuild -->
     
@@ -32,7 +27,6 @@
     <div snap-drawer>
 
        <nav class="menuActivites" role="navigation" ng-controller="SnapmenuCtrl" ng-include="'views/snapmenu.html'" >
-       
        </nav>
 
     </div>
@@ -42,7 +36,7 @@
         <!-- Add your site or application content here -->
         <div ng-include="'views/navigation.html'"></div>
 
-        <div ng-view="" role="main"></div>
+        <div ng-view="" role="main" class="main"></div>
 
         <div ng-include="'views/footer.html'"></div>
 
@@ -61,14 +55,14 @@
        ga('send', 'pageview');
     </script>
 
-    <!-- build:js(.) scripts/oldieshim.js -->
+    <!-- build:js(.) scripts/oldieshim.min.js -->
     <!--[if lt IE 9]>
     <script src="/bower_components/es5-shim/es5-shim.js"></script>
     <script src="/bower_components/json3/lib/json3.js"></script>
     <![endif]-->
     <!-- endbuild -->
 
-    <!-- build:js scripts/vendor.js -->
+    <!-- build:js(.) scripts/vendor.min.js -->
     <!-- inject:js -->
     
     <script src="/bower_components/angular/angular.js"></script>
@@ -101,7 +95,7 @@
     <!-- endbuild -->
 
 
-        <!-- build:js scripts/scripts.js -->
+        <!-- build:js scripts/scripts.min.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/page.js"></script>
