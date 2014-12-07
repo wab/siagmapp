@@ -1,10 +1,13 @@
 <header class="mainheader">
-
-    <div class="sr-only">
-       
+    <div class="sr-only">      
         <h1>Cap sur la petite mer</h1>
+        <hr>
         <h2>Golfe du Morbihan : Les bonnes pratiques</h2>
     </div>
+    <div class="container hidden-md hidden-lg">
+        <h1><img src="../images/header-mobile.jpg" class="img-responsive img-rounded"></h1>
+    </div>
+    
 
 </header>
 
@@ -13,11 +16,11 @@
     <div class="container">
         <div class="activity">
             <div class="page-header">
-                <h1>Les activités</h1>
+                <h1><span>Les activités</span></h1>
             </div>
         </div>
         <div class="row text-center">
-            <div ng-repeat="activite in activites" class="col-xs-6 col-sm-3 col-md-2 col-lg-2"><a href="#activite/{{activite.id}}" class="thumbnail"><img src="images/thumbs/{{activite.id}}.jpg" class="img-responsive"  /></a><p class="caption">{{activite.title}}</p></div>
+            <div ng-repeat="activite in activites" class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#activite/{{activite.id}}" class="thumbnail"><img src="images/thumbs/{{activite.id}}.jpg" class="img-responsive"  /></a><p class="caption">{{activite.title}}</p></div>
         </div>
     </div>
 </section>

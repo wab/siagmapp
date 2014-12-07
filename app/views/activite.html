@@ -6,16 +6,16 @@
 
 			<div class="page-activite" ng-repeat="page in activites | filter:{id:activiteId} ">
 
-				<h1>{{page.title}}</h1>
+				<h1><span>{{page.title}}</span></h1>
 
 				<p class="lead">
-					<img src="images/thumbs/{{page.id}}.jpg" width="120" height="120" class="pull-left">
+					<img src="images/thumbs/{{page.id}}.jpg" width="120" height="120" class="pull-left thumbnail-border">
 					{{page.contenu.chapo}}
 				</p>
 
 				<div ng-show="page.contenu.pratiques">
 
-					<h2>Bonnes pratiques</h2>
+					<h2 class="titre"><span>Bonnes</span> pratiques</h2>
 					<ul>
 						<li ng-repeat="item in page.contenu.pratiques">{{item}}</li>
 					</ul>
@@ -24,7 +24,7 @@
 				
 				<div ng-show="page.contenu.regles">
 
-					<h2>Règlementation</h2>
+					<h2 class="titre"><span>Règle</span>mentation</h2>
 					<ul>
 						<li ng-repeat="item in page.contenu.regles">{{item}}</li>
 					</ul>
@@ -33,7 +33,7 @@
 				
 				<div ng-show="page.contenu.securite">
 
-					<h2>Sécurité</h2>
+					<h2 class="titre titre-securite"><span>Sécu</span>rité</h2>
 					<ul>
 						<li ng-repeat="item in page.contenu.securite">{{item}}</li>
 					</ul>
@@ -43,8 +43,8 @@
 				<div ng-show="page.contenu.autre" ng-bind-html="page.contenu.autre"></div>
 
 				<figure>
-					<img src="{{page.image.src}}" class="img-responsive">
-					<figcaption class="text-muted">{{page.image.caption}}</figcaption>
+					<img src="images/contenus/{{page.id}}.jpg" class="img-responsive" alt="{{page.title}}">
+					<figcaption class="text-muted">{{page.title}}</figcaption>
 				</figure>
 
 			</div>

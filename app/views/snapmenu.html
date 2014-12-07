@@ -1,3 +1,4 @@
-<ul class="navside list" snap-close>
-   <li ng-repeat="activite in activites" ng-class="{active: isActive(page)}"><a href="#activite/{{activite.id}}" >{{activite.title}}</a></li>
+<h2>les <span>Activités</span></h2>
+<ul class="navside list-unstyled" snap-close>
+   <li ng-repeat="activite in activites" ng-class="{active: isActive(page)}"><a href="#activite/{{activite.id}}" ><img src="images/thumbs/{{activite.id}}.jpg" class="thumbnail-border"> {{activite.title}}</a></li>
 </ul>

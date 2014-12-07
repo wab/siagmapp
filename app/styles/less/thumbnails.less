@@ -37,8 +37,12 @@
 .thumbnail-border {
   display: block;
   padding: 0;
-  margin-bottom: @line-height-computed;
   line-height: @line-height-base;
-  border: 3px solid #000;
+  border-width: 0.15em;
+  border-color: #000;
+  border-style: solid;
   border-radius: @thumbnail-border-radius;
+  margin-right: 0.5em;
+  .pull-left();
+
 }

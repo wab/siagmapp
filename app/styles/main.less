@@ -14,19 +14,44 @@
 h1, h2, h3, h4 {
     text-transform:  uppercase;
 }
-.caption {
+h1 {
+    @media (min-width: @screen-sm-min) {
+        font-size: 30px;
+        font-weight: normal;
+        background: url(../images/bg-titre.jpg) repeat-x center;
+        span {
+            display: inline-block;
+            padding: 8px;
+            padding-left: 0;
+            background: #fff;
+        }
+    }
+}
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    span {
+        font-weight: bold;
+    }
+}
+figcaption {
     font-size:  0.8em;
     color: #999;
-    min-height: 4em;
+    min-height: 2em;
 }
 .header {
     background: url(../images/stripe-header.png) @brand-primary;
 }
 
 .mainheader {
-    background: url(../images/header.jpg) no-repeat center; 
-    background-size: cover; 
-    min-height: 60vh;
+    @media (min-width: @screen-md-min) {
+        background: url(../images/header.jpg) no-repeat center;
+        background-size: cover;    
+        min-height: 60vh;
+        box-shadow: 0px 0px 10px #999; 
+
+    }
+
 }
 .thumb {
     width: 100px;
@@ -41,15 +66,40 @@ section {
     background: url(../images/bg.jpg) no-repeat center bottom;
     background-size: 100%;
 }
+
+.titre {
+    background: #508aa2;
+    color: #fff;
+    border-radius: 6px;
+    padding: 8px;
+    max-width: 60%;
+}
+.titre-securite {
+    background: #354d83;
+
+}
+
 .infos-pratiques {
     background:  url(../images/stripe-footer.png) #eee;
+    padding-top: 0;
     .container {
         background: url(../images/bg-footer.png) no-repeat top left;
+    }
+    h2 {
+        margin-top: 0px;
+        background: #50aee0;
+        padding: 15px;
+        border-radius: 0 0 6px 6px;
+    }
+    .map {
+        display: block;
+        margin-top: 20px;
     }
 }
 #footer {
     background:  #ccc;
     padding: 30px 0;
+    text-transform: uppercase;
 }
 
 .wrapper {
@@ -58,17 +108,50 @@ section {
 
 .snap-drawer {
     background-image: linear-gradient(to bottom, #4075af 0%,#2b4775 100%);
+    color: #fff;
+    padding: 20px;   
 }
 
-.navside img {
-    max-height:  30px;
+.menuActivites {
+    h2 {
+        background: url(../../images/bg-btn.png) no-repeat left center;
+        padding-left: 20px;
+    }
 }
 
-p > img.pull-left {
-    margin-right: 0.5em;
+.navside {
+    margin-top: 20px;
+    li a {
+        display: block;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        color: #fff;
+        border-bottom: 1px dotted #fff;
+        text-transform: uppercase;
+        font-size: 0.8em;
+
+        .clearfix();
+        &:hover, &:focus {
+            text-decoration: none;
+            color: darken(@brand-primary, 10%);
+        }
+    }
+    img {
+    max-height:  40px;
+    }
+    
+}
+
+.encadre {
+    padding: 1em;
+    border-radius: 6px;
+    background: #7484a9;
+    color: #fff;
 }
 
 p {
     .clearfix();
 }
+
+
 

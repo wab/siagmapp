@@ -36,7 +36,6 @@ siagmApp.config(['$routeProvider', function ($routeProvider) {
 .config(['snapRemoteProvider', function(snapRemoteProvider) {
   snapRemoteProvider.globalOptions = {
     disable: 'right',
-    maxPosition: 300,
     tapToClose: 'true'
   };
 }]);
