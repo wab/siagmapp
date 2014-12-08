@@ -21,9 +21,8 @@
   "appPath": "",
 
   "overrides": {
-      "bootstrap": {
-          "main": "dist/js/bootstrap.js"
-      }
+    "bootstrap": {
+      "main": "dist/js/bootstrap.js"
+    }
   }
-
 }
