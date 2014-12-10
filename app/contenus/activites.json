@@ -26,6 +26,7 @@
 
 		"image" : {
 			"src" : "images/thumb.jpg",
+			"alt" : "texte alternatif",
 			"caption" : "légende"
 		}
 		
@@ -55,6 +56,7 @@
 
 		"image" : {
 			"src" : "images/thumb.jpg",
+			"alt" : "texte alternatif",
 			"caption" : "légende"
 		}
 		
@@ -85,6 +87,7 @@
 
 		"image" : {
 			"src" : "images/thumb.jpg",
+			"alt" : "texte alternatif",
 			"caption" : "légende"
 		}
 		
@@ -116,6 +119,7 @@
 
 		"image" : {
 			"src" : "images/thumb.jpg",
+			"alt" : "texte alternatif",
 			"caption" : "légende"
 		}
 		
@@ -145,6 +149,7 @@
 
 		"image" : {
 			"src" : "images/thumb.jpg",
+			"alt" : "texte alternatif",
 			"caption" : "légende"
 		}
 		
@@ -153,8 +158,28 @@
 		"id" : "plaisance-voile",
 		"order" : 5,
 		"title" :"Plaisance à Voile",
+		"contenu" : {
+			"chapo" : "Sur le magnifique plan d’eau du golfe du Morbihan se croisent les voiliers bénéficiant d’un mouillage sur place et les plaisanciers venus du Morbraz pour la journée.",
+			"pratiques" : [
+				"Utilisez la carte marine 7137 L golfe du Morbihan du SHOM", 
+				"Ne jetez pas votre ancre dans un herbier de zostères**",
+				"Ramenez vos déchets sur le continent"
+			],
+			"regles" : [
+				"Ne débarquez pas sur les îles et îlots bénéficiant d’un arrêté préfectoral de protection de biotope, entre le 15 avril et le 31 août, et ne pénétrez pas dans les îles privées",
+				"Ne remontez pas les rivières du Vincin et de Noyalo, ainsi que les zones de Tascon et Truscat, afin d’assurer la tranquillité des oiseaux",
+				"Respectez les règles de barre"
+			],
+			"securite" : [
+				"Le matériel de sécurité à bord doit être en état de fonctionnement",
+				"Respectez les élevages de coquillages, balisés par des perches. La navigation au-dessus des parcs présente des dangers pour les navires et les personnes",
+				"Assurez-vous de la solidité de votre mouillage, surtout en cas de tempête"
+			],
+			"autre" : "<p>Malgré l’évolution des pratiques et le développement du motonautisme, la plaisance à voile conserve une place importante sur le plan d’eau, comme en témoignent les nombreuses régates dans le golfe du Morbihan.</p>"
+		},
 		"image" : {
 			"src" : "images/thumb.jpg",
+			"alt" : "texte alternatif",
 			"caption" : "légende"
 		}
 		
@@ -163,8 +188,29 @@
 		"id" : "voile-legere",
 		"order" : 6,
 		"title" :"Voile légère (catamaran, planche à voile, dériveur)",
+		"contenu" : {
+			"chapo" : "Elle est très pratiquée dans le golfe, individuellement, dans les clubs présents sur tout le littoral ou dans le cadre scolaire.",
+			"pratiques" : [
+				"Ne dégradez pas les herbiers de zostères**, lorsque vous accostez ou vous mettez à l’eau",
+				"Profitez pleinement des paysages mais ne dérangez pas les oiseaux",
+				"Ramenez vos déchets sur le continent"
+			],
+			"regles" : [
+				"Ne débarquez pas sur les îles et îlots bénéficiant d’un arrêté préfectoral de protection de biotope, entre le 15 avril et le 31 août, et ne pénétrez pas dans les îles privées",
+				"Ne remontez pas les rivières du Vincin et de Noyalo, ainsi que les zones de Tascon et Truscat, afin d’assurer la tranquillité des oiseaux",
+				"Respectez les règles de barre"
+			],
+			"securite" : [
+				"Soyez équipé d’un gilet de sauvetage",
+				"Pratiquez d’abord en club si vous êtes débutant",
+				"Ne sortez pas en cas d’avis météo défavorable",
+				"Respectez les élevages de coquillages, balisés par des perches."
+			],
+			"autre" : "<p>La navigation au-dessus des parcs présente des dangers pour les navires et les personnes.</p><p>Pour de nombreuses écoles primaires, catamarans et dériveurs sont les embarcations idéales pour découvrir la voile. Mais attention, le golfe avec ses forts courants est un plan d’eau difficile à appréhender.</p>"
+		},
 		"image" : {
 			"src" : "images/thumb.jpg",
+			"alt" : "texte alternatif",
 			"caption" : "légende"
 		}
 		
@@ -173,8 +219,25 @@
 		"id" : "plongee",
 		"order" : 7,
 		"title" :"Plongée sous-marine",
+		"contenu" : {
+			"chapo" : "Avec 8 clubs locaux comptabilisant plus de 20 000 plongées par an, la plongée sous-marine explore principalement les tombants rocheux des îles de l’ouest du golfe. ",
+			"pratiques" : [
+				"Maîtrisez votre stabilité afin de préserver la faune et la flore fixées",
+				"Utilisez les mouillages réservés aux plongeurs dans les zones aménagées"
+			],
+			"regles" : [
+				"Signalez en surface votre présence par le pavillon Alpha ou le pavillon international de plongée. Ces drapeaux imposent aux autres navires de réduire leur vitesse et de ne pas s’approcher à moins de 100 mètres",
+				"Ne plongez jamais seul et surveillez les autres membres de votre palanquée"
+			],
+			"securite" : [
+				"Prévoyez une personne à bord du bateau pour assurer la sécurité",
+				"N’oubliez pas d’effectuer une visite médicale (annuelle pour la plongée) si vous n’avez pas pratiqué depuis longtemps"
+			],
+			"autre" : "<p>Afin d’éviter de dégrader par les ancrages répétés la faune et la flore fixées, le Parc Naturel Régional en projet a aménagé des mouillages destinés aux plongeurs sur les sites des Gorets et du Grégan.</p><p>Une zone de chasse sous-marine en apnée est autorisée sur la côte ouest de l’île-aux-Moines.</p>"
+		},
 		"image" : {
 			"src" : "images/thumb.jpg",
+			"alt" : "texte alternatif",
 			"caption" : "légende"
 		}
 		
@@ -183,8 +246,13 @@
 		"id" : "conchyliculture",
 		"order" : 8,
 		"title" :"Conchyliculture",
+		"contenu" : {
+			"chapo" : "Apparue vers 1850, c’est une activité emblématique du golfe du Morbihan",
+			"autre" : "<p>Les conchyliculteurs, au nombre d’une centaine, élèvent des coquillages sur le Domaine Public Maritime, avec un cycle de production allant de 1 à 3 ans selon les espèces. Si les huîtres restent largement majoritaires, on peut aussi trouver chez les professionnels d’autres coquillages tels que les palourdes, les coques…</p><p>L’huître creuse japonaise est élevée selon deux techniques différentes : en surélevé, c’est-à-dire dans des poches en plastique posées sur des tables, mais aussi à plat, semée directement sur le sol. Il est donc important pour les usagers des loisirs nautiques de respecter les parcs balisés par des perches en bois. Il est ainsi interdit de pêcher des coquillages à moins de 15 mètres d’un parc.</p><p>Produits naturels dont la qualité sanitaire fait l’objet d’un suivi régulier, les coquillages peuvent se déguster dans beaucoup de chantiers ostréicoles. Ces derniers participent à la diversité des paysages du golfe du Morbihan.</p><p>Site Internet : <a href='http://www.huitres-de-bretagne.com/'>www.huitres-de-bretagne.com</a></p>"
+		},
 		"image" : {
 			"src" : "images/thumb.jpg",
+			"alt" : "texte alternatif",
 			"caption" : "légende"
 		}
 		
@@ -193,8 +261,13 @@
 		"id" : "peche-pied-pro",
 		"order" : 9,
 		"title" :"Pêche à pied professionelle",
+		"contenu" : {
+			"chapo" : "Structurés à partir des années 1970, les pêcheurs à pied professionnels sont environ 150 en activité sous licence.",
+			"autre" : "<p>Ils cueillent les coquillages sauvages (palourdes, huîtres creuses, moules) mais aussi les crustacés et les poissons.</p><p>La pêche à pied de la palourde est une activité importante. Elle a lieu principalement dans le sud-est du golfe, sur le gisementdu banc de Truscat dont la ressource peut être fluctuante. Actuellement très faible, elle pose problème pour la pérennité de cette pêche.</p><p>La pêche à l’oursin, ou \"châtaigne de mer\", a débuté au cours des années 1960. D’abord pratiquée à la drague, elle s’est faite à la main à partir de 1995. Les professionnels pêchent 15 jours entre décembre et janvier dans un gisement classé situé dans la partie ouest du golfe.</p><p>Enfin, les pêcheurs à pied professionnels sont autorisés à pêcher les huîtres creuses sauvages, notamment les juvéniles, afin d’approvisionner les conchyliculteurs.</p><p>Site Internet : <a href='www.cdpmem56.fr/la-peche-a-pied'>www.cdpmem56.fr/la-peche-a-pied</a></p>"
+		},
 		"image" : {
 			"src" : "images/thumb.jpg",
+			"alt" : "texte alternatif",
 			"caption" : "légende"
 		}
 		
@@ -203,8 +276,13 @@
 		"id" : "peche-embarquee-pro",
 		"order" : 10,
 		"title" :"Pêche embarquée professionelle",
+		"contenu" : {
+			"chapo" : "Autrefois à la voile, la flottille actuelle de la pêche professionnelle comprend une soixantaine de navires pour environ 90 marins pêcheurs, pratiquant une pêche côtière à la journée avec 1 à 2 marins à bord.",
+			"autre" : "<p>Au fil des saisons se succèdent différents métiers de pêche selon les engins utilisés et les espèces ciblées (bar, mulet, dorade, rouget, anguille, civelle, seiche ou morgate, crevette bouquet, crabes, etc.) :</p><ul><li>La palangre (bar, dorade, lieu, congre, etc.) d’avril à décembre dans la partie ouest du golfe</li><li>Le filet trémail (seiche, sole) de mars à mai pour la seiche en entrée du golfe</li><li>La drague (palourdes) quelques jours d’avril à juillet dans le sud-est du golfe</li><li>Le filet droit (bar, dorade, lieu, rouget, mulet, etc.) toute l’année en rivière d’Auray et entre les îles</li><li>Le verveux à anguille d’avril à septembre dans l’est du golfe</li><li>Le casier (seiche) de mars à mai dans tout le golfe</li><li>(étrille, crabe vert) toute l’année dans tout le golfe</li></ul><p>Les pêcheurs sont représentés par le Comité Départemental des Pêches maritimes et des Elevages Marins du Morbihan (CDPMEM). Les licences sont délivrées par le Comité Régional avec l’objectif d’une gestion durable des ressources.<p>Site Internet : <a href='http://www.cdpmem56.fr/'>www.cdpmem56.fr</a></p>"
+		},
 		"image" : {
 			"src" : "images/thumb.jpg",
+			"alt" : "texte alternatif",
 			"caption" : "légende"
 		}
 		
@@ -213,8 +291,13 @@
 		"id" : "transport-maritime",
 		"order" : 11,
 		"title" :"Transport maritime",
+		"contenu" : {
+			"chapo" : "Il regroupe les marchandises et les passagers.",
+ 			"autre" : "<p>Le transport des marchandises concerne essentiellement le ravitaillement des îles : à partir de Barrarac’h (Séné) pour l’Ile d’Arz et du port de commerce de Vannes pour les îles de Houat, Hoëdic et Belle-Île. Ce dernier port accueille occasionnellement quelques petits cargos.</p><p>Huit compagnies maritimes assurent un service de transport à passagers avec des liaisons régulières vers les îles, dont l’Ile-aux-Moines et l’Île d’Arz. Elles proposent également des circuits touristiques avec escales.</p><p>L’ensemble de la flotte comprend environ 35 unités de 50 à 300 places, employant en saison près de 200 salariés et transportant 600 000 à 800 000 passagers par an selon les années. Si la moitié des compagnies maritimes sont en service à l’année, la fréquentation touristique conditionne leur activité qui s’étend principalement d’avril à octobre.</p><p>Depuis 20 ans, le \"Petit passeur\" propose pendant la saison estivale des traversées entre la cale de Montsarrac à Séné et la cale du passage à Saint-Armel.</p>"
+		},
 		"image" : {
 			"src" : "images/thumb.jpg",
+			"alt" : "texte alternatif",
 			"caption" : "légende"
 		}
 		

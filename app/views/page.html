@@ -7,10 +7,27 @@
             <div class="page" ng-repeat="page in pages | filter:{id:pageId} ">
                 <h1><span>{{page.title}}</span></h1>
                 <figure ng-show="page.image">
-                    <img src="images/contenus/{{page.id}}.jpg" alt="{{page.title}}" class="img-responsive">
-                    <figcaption class="text-muted">{{page.title}}</figcaption>
+                    <img src="{{page.image.src}}" alt="{{page.image.alt}}" class="img-responsive">
+                    <figcaption class="text-muted">{{page.image.caption}}</figcaption>
                 </figure>
                 <div ng-bind-html="page.contenu" class="contenu"></div>
+               
+                <div ng-show="page.list">
+                     <div class="form-group">
+                        <label for="search" class="sr-only">Recherche</label>
+                        <input type="search" ng-model="search" id="search" class="form-control" placeholder="Entrez un mot-clef">
+                        <hr>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li ng-repeat="item in page.list | filter:search | orderBy:'title' ">
+                            <h3 ng-bind-html="item.title"></h3>
+                            <address ng-show="item.adresse" ng-bind-html="item.adresse" class="text-muted"></address>
+                            <p ng-show="item.url"><span class="glyphicon glyphicon-hand-right"></span> <a href="http://{{item.url}}">{{item.url}}</a></p>
+                        <hr>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
             
         </div><!-- /.col-xs-12 col-md-6 col-md-offset-3 -->

@@ -4,7 +4,7 @@
 		<div class="col-md-6 col-md-offset-3">
 
 
-			<div class="page-activite" ng-repeat="page in activites | filter:{id:activiteId} ">
+			<div class="page-activite" ng-repeat="page in activites | filter:{id:activiteId} | limitTo: 1 ">
 
 				<h1><span>{{page.title}}</span></h1>
 
@@ -43,8 +43,8 @@
 				<div ng-show="page.contenu.autre" ng-bind-html="page.contenu.autre"></div>
 
 				<figure>
-					<img src="images/contenus/{{page.id}}.jpg" class="img-responsive" alt="{{page.title}}">
-					<figcaption class="text-muted">{{page.title}}</figcaption>
+					<img src="{{page.image.src}}" class="img-responsive" alt="{{page.image.alt}}">
+					<figcaption class="text-muted">{{page.image.caption}}</figcaption>
 				</figure>
 
 			</div>

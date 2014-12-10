@@ -4264,12 +4264,17 @@ h4 {
     background: #fff;
   }
 }
-h2 {
+h2,
+h3 {
   font-size: 20px;
   font-weight: normal;
 }
-h2 span {
+h2 span,
+h3 span {
   font-weight: bold;
+}
+h3 {
+  font-size: 16px;
 }
 figcaption {
   font-size: 0.8em;
@@ -4326,6 +4331,10 @@ section {
 .infos-pratiques .map {
   display: block;
   margin-top: 20px;
+}
+.infos-pratiques ul > li {
+  margin-bottom: 0.3em;
+  border-bottom: dotted 1px #fff;
 }
 #footer {
   background: #ccc;
@@ -4401,4 +4410,10 @@ p:after {
 }
 p:after {
   clear: both;
+}
+address {
+  margin-bottom: 0.2em;
+}
+address span {
+  font-weight: bold;
 }

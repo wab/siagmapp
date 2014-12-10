@@ -28,6 +28,131 @@
 	 }
 	},
 	{
+	 "id" : "liens-utiles",
+	 "title" : "Liens utiles",
+	 "contenu" : "<p>Liens utiles</p>",
+	 "list" : [
+	 	{
+	 		"title" : "Agence des <span>Aires Marines Protégées</span>",
+	 		"url" : "www.aires-marines.fr"
+	 	},
+	 	{
+	 		"title" : "Agence Régionale de la <span>Santé / IFREMER</span>",
+	 		"url" : "www.pecheapied-responsable.fr"
+	 	},
+	 	{
+	 		"title" : "Annuaire des <span>Marées</span>",
+	 		"url" : "maree.info"
+	 	},
+	 	{
+	 		"title" : "Association <span>econav</span>",
+	 		"url" : "www.econav.org"
+	 	},
+	 	{
+	 		"title" : "Comité Interrégional Bretagne et Pays de Loire <span>de Plongée</span> (<em>CIBPL</em>)",
+	 		"url" : "www.cibpl.fr"
+	 	},
+	 	{
+	 		"title" : "Comité National du <span>Kite-surf</span>",
+	 		"url" : "kite.ffvl.fr"
+	 	},
+	 	{
+	 		"title" : "Compagnie <span>Ports du Morbihan</span>",
+	 		"url" : "www.sagemor.com"
+	 	},
+	 	{
+	 		"title" : "Fédération Française d’études et de <span>Sports Sous-Marins</span> (<em>FFESSM</em>)",
+	 		"url" : "www.ffessm.fr"
+	 	},
+	 	{
+	 		"title" : "Fédération Française de <span>Vol Libre</span> (<em>FFVL</em>)",
+	 		"url" : "federation.ffvl.fr"
+	 	},
+	 	{
+	 		"title" : "Fédération Française <span>Motonautique</span>",
+	 		"url" : "www.ffmotonautique.com"
+	 	},
+	 	{
+	 		"title" : "Station de La Trinité sur Mer (<em>IFREMER</em>)",
+	 		"url" : "www.ifremer.fr/deltn/"
+	 	},
+	 	{
+	 		"title" : "Météo France",
+	 		"url" : "www.meteofrance.com/accueil"
+	 	},
+	 	{
+	 		"title" : "Ministère du <span>Développement Durable</span>",
+	 		"url" : "www.developpement-durable.gouv.fr"
+	 	},
+	 	{
+	 		"title" : "Ministère en Charge des <span>Sports</span>",
+	 		"url" : "www.sports.gouv.fr"
+	 	},
+	 	{
+	 		"title" : "Préfecture du <span>Morbihan</span>",
+	 		"url" : "www.morbihan.gouv.fr"
+	 	},
+	 	{
+	 		"title" : "Préfecture <span>Maritime Atlantique</span>",
+	 		"url" : "www.premar-atlantique.gouv.fr"
+	 	},
+	 	{
+	 		"title" : "Réglementation de la <span>Navigation dans le Golfe</span>",
+	 		"url" : "www.golfedumorbihan.org"
+	 	},
+	 	{
+	 		"title" : "Service <span>Hydrographique et Océanographique</span> de la Marine (<em>SHOM</em>)",
+	 		"url" : "www.shom.fr"
+	 	},
+	 	{
+	 		"title" : "Société Nationale de <span>Sauvetage en Mer</span> (<em>SNSM</em>)",
+	 		"url" : "www.snsm.org"
+	 	}
+	 ]
+	},
+	{
+	 "id" : "partenariats",
+	 "title" : "Partenariats",
+	 "contenu" : "<p>Partenariats</p>",
+	 "list" : [
+	 	{
+	 		"title" : "Direction Départementale des <span>Territoires et de la Mer du Morbihan</span>",
+	 		"adresse" : "1 Boulevard de la Paix, <span>56000 Vannes</span>",
+	 		"url" : "www.morbihan.gouv.fr"
+	 	},
+	 	{
+	 		"title" : "Comité Régional de la <span>Conchyliculture de Bretagne-Sud</span>",
+	 		"adresse" : "BP 10325, <span>56403 Auray cedex</span>",
+	 		"url" : "www.huitres‐de-bretagne.com"
+	 	},
+	 	{
+	 		"title" : "École Nationale de <span>Voile et des Sports Nautiques</span>",
+	 		"adresse" : "Beg Rohu, <span>56510 Saint-Pierre Quiberon</span>",
+	 		"url" : "www.envsn.sports.gouv.fr"
+	 	},
+	 	{
+	 		"title" : "Comité Départemental de <span>Plongée du Morbihan</span>",
+	 		"adresse" : "2, lot Le Garrec, <span>56400 Brech</span>",
+	 		"url" : "www.cibpl.fr"
+	 	},
+	 	{
+	 		"title" : "Comité départemental de <span>Canoë-Kayak du Morbihan</span>",
+	 		"adresse" : "10 rue de Hoëdic, <span>56600 Lanester</span>",
+	 		"url" : "www.cdck56.org"
+	 	},
+	 	{
+	 		"title" : "Comité Départemental de <span>Voile du Morbihan</span>",
+	 		"adresse" : "18 rue Alain Gerbault - ZI du Prat, <span>56000 Vannes</span>",
+	 		"url" : "www.cdv56.fr"
+	 	},
+	 	{
+	 		"title" : "Union Nationale des <span>Associations de Navigateurs du Morbihan</span>",
+	 		"adresse" : "Capitainerie Quai Bernard Moitessier, <span>56000 Vannes</span>",
+	 		"url" : "www.unan56.fr "
+	 	}
+	 ]
+	},
+	{
 	 "id" : "mentions-legales",
 	 "title" : "Mentions Légales",
 	 "contenu" : "<p>mentions légales</p>"

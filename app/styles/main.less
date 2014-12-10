@@ -27,13 +27,18 @@ h1 {
         }
     }
 }
-h2 {
+h2, h3 {
     font-size: 20px;
     font-weight: normal;
     span {
         font-weight: bold;
     }
 }
+
+h3 {
+    font-size: 16px;
+}
+
 figcaption {
     font-size:  0.8em;
     color: #999;
@@ -95,6 +100,11 @@ section {
         display: block;
         margin-top: 20px;
     }
+
+    ul > li {
+        margin-bottom: 0.3em;
+        border-bottom: dotted 1px #fff;
+    }
 }
 #footer {
     background:  #ccc;
@@ -141,7 +151,6 @@ section {
     }
     
 }
-
 .encadre {
     padding: 1em;
     border-radius: 6px;
@@ -151,4 +160,11 @@ section {
 
 p {
     .clearfix();
+}
+
+address {
+    margin-bottom: 0.2em;
+    span {
+        font-weight: bold;
+    }
 }

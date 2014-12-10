@@ -1,7 +1,12 @@
 'use strict';
 
-siagmApp.controller('ContactCtrl',  ['$scope', '$http' , 
-	function ($scope, $http) {
+siagmApp.controller('ContactCtrl',  ['$scope', 'DataPages', '$http' , 
+	function ($scope, DataPages, $http) {
+
+		DataPages.getData(function(data) {
+			console.log('data pages loaded');
+			$scope.pages = data;
+		});
 
 		// create a blank object to hold our form information
 		// $scope will allow this to pass between controller and view

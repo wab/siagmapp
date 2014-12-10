@@ -3,37 +3,26 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <h2><img src="../images/titre-liens.png" alt="liens utiles"></h2>
+                <h2><img src="../images/titre-partenariats.png" alt="{{liens.title}}"></h2>
                 <hr>
                 <ul class="list-unstyled">
-                    <li>
-                        <h4>Info Pratique 1</h4>
-                        <p>luctus libero lacinia luctus libero lacinia luctus libero lacinia</p>
-                    </li>
-                    <li>
-                        <h4>Info Pratique 2</h4>
-                        <p>luctus libero lacinia luctus libero lacinia luctus libero lacinia</p>
-                    </li>
-                    <li>
-                        <h4>Info Pratique 3</h4>
-                        <p>luctus libero lacinia luctus libero lacinia luctus libero lacinia</p>
-                    </li>
-                    <li>
-                        <h4>Info Pratique 4</h4>
-                        <p>luctus libero lacinia luctus libero lacinia luctus libero lacinia</p>
+                    <li ng-repeat="lien in liens.list | limitTo:5">
+                        <h3 ng-bind-html="lien.title" class="h4"></h3>
+                        <p><a href="http://{{lien.url}}">{{lien.url}}</a></p>
                     </li>
                 </ul>
-                <p class="text-right"><a href="#" class="btn btn-primary"><span>+ d'infos</span></a></p>              
+                <p class="text-right"><a href="#/page/{{liens.id}}" class="btn btn-primary"><span>+ d'infos</span></a></p> 
             </div>
             <div class="col-md-3">
                 <h2><img src="../images/titre-partenariats.png" alt="partenariats"></h2>
                 <hr>
-                <ul class="nav nav-pills nav-stacked">
-                    <li><a href="#">luctus libero lacinia</a></li>
-                    <li><a href="#">luctus libero lacinia</a></li>
-                    <li><a href="#">luctus libero lacinia</a></li>
+                 <ul class="list-unstyled">
+                    <li ng-repeat="partenariat in partenariats.list | limitTo:3">
+                        <h3 ng-bind-html="partenariat.title" class="h4">{{partenariat.title}}</h3>
+                        <p><a href="http://{{partenariat.url}}">{{partenariat.url}}</a></p>
+                    </li>
                 </ul>
-                <p class="text-right"><a href="#" class="btn btn-primary"><span>+ d'infos</span></a></p>
+                <p class="text-right"><a href="#/page/{{partenariats.id}}" class="btn btn-primary"><span>+ d'infos</span></a></p>
             </div>
             <div class="col-md-6">
                 <a href="#" class="map lightbox"><img src="images/map.jpg" class="img-responsive" /></a>

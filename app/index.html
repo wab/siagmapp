@@ -31,14 +31,14 @@
 
     </div>
 
-    <div snap-content class="wrapper">
+    <div snap-content class="wrapper" >
 
         <!-- Add your site or application content here -->
         <div ng-include="'views/navigation.html'"></div>
 
         <div ng-view="" role="main" class="main"></div>
 
-        <div ng-include="'views/footer.html'"></div>
+        <div ng-include="'views/footer.html'" ng-controller="FooterCtrl"></div>
 
     </div>
 
@@ -105,6 +105,7 @@
         <script src="scripts/services/datactivites.js"></script>
         <script src="scripts/services/datapages.js"></script>
         <script src="scripts/controllers/contact.js"></script>
+        <script src="scripts/controllers/footer.js"></script>
         <!-- endbuild -->
 </body>
 </html>
