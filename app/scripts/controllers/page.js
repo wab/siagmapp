@@ -1,13 +1,11 @@
 'use strict';
 
-siagmApp.controller('PageCtrl',  ['$scope', 'DataPages', '$routeParams',  
-	function ($scope, DataPages, $routeParams) {
+siagmApp.controller('PageCtrl',  ['$scope', '$filter', 'DataPages', '$routeParams',  
+	function ($scope, $filter, DataPages, $routeParams) {
 		
 		DataPages.getData(function(data) {
 			console.log('data pages loaded');
-			$scope.pages = data;
+			$scope.page = $filter('filter')(data, {id:$routeParams.pageId})[0];
 		});
-		
-		$scope.pageId = $routeParams.pageId;
 
 	}]);

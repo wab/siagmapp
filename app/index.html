@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>SiagmApp</title>
+    <title>Golfe du Morbihan : Cap sur la petite mer</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     
@@ -33,8 +33,7 @@
 
     <div snap-content class="wrapper" >
 
-        <!-- Add your site or application content here -->
-        <div ng-include="'views/navigation.html'"></div>
+        <div ng-include="'views/navigation.html'" ng-controller="NavigationCtrl"></div>
 
         <div ng-view="" role="main" class="main"></div>
 
@@ -106,6 +105,7 @@
         <script src="scripts/services/datapages.js"></script>
         <script src="scripts/controllers/contact.js"></script>
         <script src="scripts/controllers/footer.js"></script>
+        <script src="scripts/directives/isactive.js"></script>
         <!-- endbuild -->
 </body>
 </html>

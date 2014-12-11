@@ -1,18 +1,13 @@
 'use strict';
 
-siagmApp.controller('ActiviteCtrl',  ['$scope', 'Datactivites', 'DataPages', '$routeParams',  
-	function ($scope, Datactivites, DataPages, $routeParams) {
+siagmApp.controller('ActiviteCtrl',  ['$rootScope','$scope', '$filter', 'Datactivites', 'DataPages', '$routeParams',  
+	function ($rootScope, $scope, $filter, Datactivites, DataPages, $routeParams) {
+		
+		$rootScope.activiteId = $routeParams.activiteId;
 		
 		Datactivites.getData(function(data) {
 			console.log('data activites loaded');
-			$scope.activites = data;
+			$scope.page = $filter('filter')(data, {id:$routeParams.activiteId})[0];
 		});
-
-		DataPages.getData(function(data) {
-			console.log('data pages loaded');
-			$scope.pages = data;
-		});
-
-		$scope.activiteId = $routeParams.activiteId;
-
+		
 	}]);

@@ -1,53 +1,54 @@
 <div class="container">
 
 	<div class="row">
-		<div class="col-md-6 col-md-offset-3">
+		<!-- titre -->
+		<header class="col-md-8 col-md-offset-3 col-lg-8 col-lg-offset-2 col-sm-12">
+			<h1><span>{{page.title}}</span></h1>
+		</header>
+		<!-- vignette et chapo -->
+		<div class="col-md-2 col-md-offset-1 col-lg-offset-2 col-sm-12">
+			<img src="images/thumbs/{{page.id}}.jpg" class="thumbnail-border img-responsive">
+			<p class="encadre">{{page.contenu.chapo}}</p>
+		</div>
+		<!-- contenu -->
+		<div class="col-md-8 col-sm-12 col-lg-6">
 
+			<div ng-show="page.contenu.pratiques">
 
-			<div class="page-activite" ng-repeat="page in activites | filter:{id:activiteId} | limitTo: 1 ">
-
-				<h1><span>{{page.title}}</span></h1>
-
-				<p class="lead">
-					<img src="images/thumbs/{{page.id}}.jpg" width="120" height="120" class="pull-left thumbnail-border">
-					{{page.contenu.chapo}}
-				</p>
-
-				<div ng-show="page.contenu.pratiques">
-
-					<h2 class="titre"><span>Bonnes</span> pratiques</h2>
-					<ul>
-						<li ng-repeat="item in page.contenu.pratiques">{{item}}</li>
-					</ul>
-
-				</div>
-				
-				<div ng-show="page.contenu.regles">
-
-					<h2 class="titre"><span>Règle</span>mentation</h2>
-					<ul>
-						<li ng-repeat="item in page.contenu.regles">{{item}}</li>
-					</ul>
-
-				</div>
-				
-				<div ng-show="page.contenu.securite">
-
-					<h2 class="titre titre-securite"><span>Sécu</span>rité</h2>
-					<ul>
-						<li ng-repeat="item in page.contenu.securite">{{item}}</li>
-					</ul>
-
-				</div>
-
-				<div ng-show="page.contenu.autre" ng-bind-html="page.contenu.autre"></div>
-
-				<figure>
-					<img src="{{page.image.src}}" class="img-responsive" alt="{{page.image.alt}}">
-					<figcaption class="text-muted">{{page.image.caption}}</figcaption>
-				</figure>
+				<h2 class="titre"><span>Bonnes</span> pratiques</h2>
+				<ul>
+					<li ng-repeat="item in page.contenu.pratiques">{{item}}</li>
+				</ul>
 
 			</div>
+			
+			<div ng-show="page.contenu.regles">
+
+				<h2 class="titre"><span>Règle</span>mentation</h2>
+				<ul>
+					<li ng-repeat="item in page.contenu.regles">{{item}}</li>
+				</ul>
+
+			</div>
+			
+			<div ng-show="page.contenu.securite">
+
+				<h2 class="titre titre-securite"><span>Sécu</span>rité</h2>
+				<ul>
+					<li ng-repeat="item in page.contenu.securite">{{item}}</li>
+				</ul>
+
+			</div>
+
+			<div ng-show="page.contenu.autre" ng-bind-html="page.contenu.autre"></div>
+
+ 		</div>
+
+		<!-- image -->
+		<figure class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-sm-12">
+			<img src="{{page.image.src}}" class="img-responsive" alt="{{page.image.alt}}">
+			<figcaption class="text-muted">{{page.image.caption}}</figcaption>
+		</figure>
 		
 		</div>
 

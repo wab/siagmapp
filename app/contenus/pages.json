@@ -156,6 +156,12 @@
 	 "id" : "mentions-legales",
 	 "title" : "Mentions Légales",
 	 "contenu" : "<p>mentions légales</p>"
+	},
+
+	{
+	 "id" : "sitemap",
+	 "title" : "Plan du site",
+	 "contenu" : "<p>sitemap</p>"
 	}
 
 

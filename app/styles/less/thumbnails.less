@@ -42,7 +42,17 @@
   border-color: #000;
   border-style: solid;
   border-radius: @thumbnail-border-radius;
-  margin-right: 0.5em;
-  .pull-left();
+  margin-bottom: 1em;
+ 
+  @media (max-width: @screen-md-min) {
+    .pull-left();
+    margin-right: 0.5em;
+     
+  }
+}
 
+.menuActivites .thumbnail-border {
+    .pull-left();
+     margin-right: 0.5em;
+     margin-bottom: 0;
 }

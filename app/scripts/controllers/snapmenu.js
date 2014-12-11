@@ -1,9 +1,9 @@
 'use strict';
 
-siagmApp.controller('SnapmenuCtrl', ['$scope', '$location', 'Datactivites', 
-	function ($scope, $location, Datactivites) {
+siagmApp.controller('SnapmenuCtrl', ['$scope', 'Datactivites', 
+	function ($scope, Datactivites) {
 	   	Datactivites.getData(function(data) {
-			console.log('data activites loaded');
+			console.log('data menu activites loaded');
 			$scope.activites = data;
 		});
 	}]);
