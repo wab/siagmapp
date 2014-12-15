@@ -30,11 +30,9 @@ siagmApp.directive('navMenu', function($location) {
 
       if (pathLink) {
         if (currentLink) {
-          currentLink.parent().removeClass(onClass);
           currentLink.removeClass(onClass);
         }
         currentLink = pathLink;
-        currentLink.parent().addClass(onClass);
         currentLink.addClass(onClass);
       }
     });

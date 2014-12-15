@@ -82,7 +82,7 @@
 				"Ne vous aventurez pas sur une vasière trop mouvante, au risque de rester bloqué",
 				"Renseignez-vous sur les fermetures sanitaires"
 			],
-			"autre" : "Les pêcheurs recherchent en priorité les huîtres plates et creuses, les palourdes, les moules et les crevettes."
+			"autre" : "<p>Les pêcheurs recherchent en priorité les huîtres plates et creuses, les palourdes, les moules et les crevettes.</p>"
 		},
 
 		"image" : {

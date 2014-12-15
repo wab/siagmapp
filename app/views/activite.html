@@ -2,16 +2,18 @@
 
 	<div class="row">
 		<!-- titre -->
-		<header class="col-md-8 col-md-offset-3 col-lg-8 col-lg-offset-2 col-sm-12">
+		<header class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-sm-12">
 			<h1><span>{{page.title}}</span></h1>
 		</header>
 		<!-- vignette et chapo -->
-		<div class="col-md-2 col-md-offset-1 col-lg-offset-2 col-sm-12">
-			<img src="images/thumbs/{{page.id}}.jpg" class="thumbnail-border img-responsive">
-			<p class="encadre">{{page.contenu.chapo}}</p>
+		<div class="col-md-2 col-md-offset-1 col-lg-offset-2 col-xs-12">
+			<div class="row">
+				<div class="col-xs-4 col-sm-3 col-md-12"><img src="images/thumbs/{{page.id}}.jpg" class="thumbnail-border img-responsive"></div>
+				<div class="col-xs-8 col-sm-9 col-md-12"><p class="encadre">{{page.contenu.chapo}}</p></div>
+			</div>
 		</div>
 		<!-- contenu -->
-		<div class="col-md-8 col-sm-12 col-lg-6">
+		<div class="col-md-8 col-xs-12 col-lg-6">
 
 			<div ng-show="page.contenu.pratiques">
 
@@ -45,8 +47,8 @@
  		</div>
 
 		<!-- image -->
-		<figure class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-sm-12">
-			<img src="{{page.image.src}}" class="img-responsive" alt="{{page.image.alt}}">
+		<figure class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-xs-12">
+			<img src="images/contenus/{{page.id}}.jpg" class="img-responsive" alt="{{page.image.alt}}">
 			<figcaption class="text-muted">{{page.image.caption}}</figcaption>
 		</figure>
 		

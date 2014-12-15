@@ -2496,7 +2496,7 @@ fieldset[disabled] .btn {
   margin: 1px;
   padding: 4px 8px;
   padding-left: 35px;
-  background: url(../../images/bg-btn.png) no-repeat 10px;
+  background: url('../images/bg-btn.png') no-repeat 10px;
   border: 1px dotted #fff;
 }
 .btn-default {
@@ -3356,7 +3356,7 @@ tbody.collapse.in {
   line-height: 20px;
   color: #b5cfe5;
   text-transform: uppercase;
-  background: url(../../images/menu_sep.png) no-repeat right center;
+  background: url('../images/menu_sep.png') no-repeat right center;
 }
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus {
@@ -3366,9 +3366,8 @@ tbody.collapse.in {
 .navbar-nav > li:last-child a {
   background: none;
 }
-.navbar-nav > li.active a {
+.navbar-nav > li a.active {
   color: #fff;
-  background: rgba(255, 255, 255, 0.05);
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -3513,9 +3512,9 @@ a.label:focus {
   line-height: 1.42857143;
   background-color: #ffffff;
   box-shadow: 0px 0px 6px #999;
-  -webkit-transition: border 0.2s ease-in-out;
-  -o-transition: border 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .thumbnail > img,
 .thumbnail a > img {
@@ -3526,10 +3525,13 @@ a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
   background-color: #adcbe9;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
-.thumbnail .caption {
-  padding: 9px;
-  color: #21274d;
+.thumb-caption {
+  min-height: 3em;
 }
 .thumbnail-border {
   display: block;
@@ -3540,12 +3542,6 @@ a.thumbnail.active {
   border-style: solid;
   border-radius: 15%;
   margin-bottom: 1em;
-}
-@media (max-width: 992px) {
-  .thumbnail-border {
-    float: left !important;
-    margin-right: 0.5em;
-  }
 }
 .menuActivites .thumbnail-border {
   float: left !important;
@@ -4269,7 +4265,7 @@ h4 {
   h1 {
     font-size: 30px;
     font-weight: normal;
-    background: url(../images/bg-titre.jpg) repeat-x center;
+    background: url('../images/bg-titre.jpg') repeat-x center;
   }
   h1 span {
     display: inline-block;
@@ -4296,11 +4292,11 @@ figcaption {
   min-height: 2em;
 }
 .header {
-  background: url(../images/stripe-header.png) #21274d;
+  background: url('../images/stripe-header.png') #21274d;
 }
 @media (min-width: 992px) {
   .mainheader {
-    background: url(../images/header.jpg) no-repeat center;
+    background: url('../images/header.jpg') no-repeat center;
     background-size: cover;
     min-height: 60vh;
     box-shadow: 0px 0px 10px #999;
@@ -4313,11 +4309,13 @@ figcaption {
 }
 section {
   padding: 40px 0;
+  min-height: 800px;
 }
 .main {
   padding-bottom: 20px;
-  background: url(../images/bg.jpg) no-repeat center bottom;
+  background: url('../images/bg.jpg') no-repeat center bottom;
   background-size: 100%;
+  min-height: 800px;
 }
 .titre {
   background: #508aa2;
@@ -4330,11 +4328,11 @@ section {
   background: #354d83;
 }
 .infos-pratiques {
-  background: url(../images/stripe-footer.png) #eeeeee;
+  background: url('../images/stripe-footer.png') #eeeeee;
   padding-top: 0;
 }
 .infos-pratiques .container {
-  background: url(../images/bg-footer.png) no-repeat top left;
+  background: url('../images/bg-footer.png') no-repeat top left;
 }
 .infos-pratiques h2 {
   margin-top: 0px;
@@ -4367,7 +4365,7 @@ section {
   padding: 20px;
 }
 .menuActivites h2 {
-  background: url(../../images/bg-btn.png) no-repeat left center;
+  background: url('../images/bg-btn.png') no-repeat left center;
   padding-left: 20px;
 }
 .navside {

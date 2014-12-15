@@ -18,7 +18,7 @@ h1 {
     @media (min-width: @screen-sm-min) {
         font-size: 30px;
         font-weight: normal;
-        background: url(../images/bg-titre.jpg) repeat-x center;
+        background: url('@{img-path}bg-titre.jpg') repeat-x center;
         span {
             display: inline-block;
             padding: 8px;
@@ -45,12 +45,12 @@ figcaption {
     min-height: 2em;
 }
 .header {
-    background: url(../images/stripe-header.png) @brand-primary;
+    background: url('@{img-path}stripe-header.png') @brand-primary;
 }
 
 .mainheader {
     @media (min-width: @screen-md-min) {
-        background: url(../images/header.jpg) no-repeat center;
+        background: url('@{img-path}header.jpg') no-repeat center;
         background-size: cover;    
         min-height: 60vh;
         box-shadow: 0px 0px 10px #999; 
@@ -65,11 +65,14 @@ figcaption {
 }
 section {
     padding: 40px 0;
+    min-height: 800px;
 }
 .main {
     padding-bottom:  20px;
-    background: url(../images/bg.jpg) no-repeat center bottom;
+    background: url('@{img-path}bg.jpg') no-repeat center bottom;
     background-size: 100%;
+    min-height: 800px;
+
 }
 
 .titre {
@@ -85,10 +88,10 @@ section {
 }
 
 .infos-pratiques {
-    background:  url(../images/stripe-footer.png) #eee;
+    background:  url('@{img-path}stripe-footer.png') #eee;
     padding-top: 0;
     .container {
-        background: url(../images/bg-footer.png) no-repeat top left;
+        background: url('@{img-path}bg-footer.png') no-repeat top left;
     }
     h2 {
         margin-top: 0px;
@@ -128,7 +131,7 @@ section {
 
 .menuActivites {
     h2 {
-        background: url(../../images/bg-btn.png) no-repeat left center;
+        background: url('@{img-path}bg-btn.png') no-repeat left center;
         padding-left: 20px;
     }
 }

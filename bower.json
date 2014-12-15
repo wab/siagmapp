@@ -19,7 +19,6 @@
     "angular-scenario": "~1.3.0"
   },
   "appPath": "",
-
   "overrides": {
     "bootstrap": {
       "main": "dist/js/bootstrap.js"

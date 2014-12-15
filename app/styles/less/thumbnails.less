@@ -11,7 +11,7 @@
   line-height: @line-height-base;
   background-color: @thumbnail-bg;
   box-shadow: 0px 0px 6px #999;
-  .transition(border .2s ease-in-out);
+  .transition(all 0.2s ease-in-out);
 
   > img,
   a > img {
@@ -25,14 +25,17 @@
   a&:focus,
   a&.active {
     background-color: #adcbe9;
+    .scale(1.1);
   }
 
-  // Image captions
-  .caption {
-    padding: @thumbnail-caption-padding;
-    color: @thumbnail-caption-color;
-  }
+  
 }
+
+// Image captions
+  .thumb-caption {
+
+    min-height: 3em;
+  }
 
 .thumbnail-border {
   display: block;
@@ -44,11 +47,7 @@
   border-radius: @thumbnail-border-radius;
   margin-bottom: 1em;
  
-  @media (max-width: @screen-md-min) {
-    .pull-left();
-    margin-right: 0.5em;
-     
-  }
+  
 }
 
 .menuActivites .thumbnail-border {

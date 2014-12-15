@@ -1,6 +1,6 @@
 'use strict';
 
-siagmApp.controller('FooterCtrl',  ['$scope', '$filter', 'DataPages' ,
+siagmApp.controller('FooterCtrl',  ['$scope', '$filter', 'DataPages',
 	function ($scope, $filter, DataPages) {
 		
 		DataPages.getData(function(data) {
@@ -9,7 +9,5 @@ siagmApp.controller('FooterCtrl',  ['$scope', '$filter', 'DataPages' ,
 			$scope.partenariats = $filter('filter')(data, {id:'partenariats'})[0];
 
 		});
-
-		
 
 }]);
