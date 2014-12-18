@@ -36,12 +36,12 @@ $data 			= array(); 		// array to pass back data
 
 		$mail = new PHPMailer;
 		
-		$mail->From = 'from@example.com';
-		$mail->FromName = 'Mailer';
-		$mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
-		$mail->Subject = 'Here is the subject';
-		$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-		$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+		$mail->From = $_POST['email'];
+		$mail->FromName = $_POST['name'];
+		$mail->addAddress('wab2com@gmail.com', 'contact siagm');     // Add a recipient
+		$mail->Subject = 'SiagmApp [formulaire de contact]';
+		$mail->Body    = $_POST['contenu'];
+		$mail->AltBody = $_POST['contenu'];
 
 		if(!$mail->send()) {
 			

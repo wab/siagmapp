@@ -1,9 +1,9 @@
 <!-- zone infos pratiques -->
-<section class="section infos-pratiques">
+<aside class="section infos-pratiques">
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <h2><img src="images/titre-partenariats.png" alt="{{liens.title}}"></h2>
+                <h2><img src="images/titre-liens.png" alt="{{liens.title}}"></h2>
                 <hr>
                 <ul class="list-unstyled">
                     <li ng-repeat="lien in liens.list | limitTo:5">
@@ -14,7 +14,7 @@
                 <p class="text-right"><a href="#/page/{{liens.id}}" class="btn btn-primary"><span>+ d'infos</span></a></p> 
             </div>
             <div class="col-md-3">
-                <h2><img src="images/titre-partenariats.png" alt="partenariats"></h2>
+                <h2><img src="images/titre-partenariats.png" alt="{{partenariats.title}}"></h2>
                 <hr>
                  <ul class="list-unstyled">
                     <li ng-repeat="partenariat in partenariats.list | limitTo:3">
@@ -29,18 +29,10 @@
             </div>
         </div>
     </div>
-</section>
+</aside>
 
 <div id="footer">
     <div class="container" nav-menu="disabled">
         <p class="text-muted credit">SIAGM © 2014 / <a href="#/contact" class="btn btn-link">nous contacter</a> / <a href="#/page/mentions-legales"  class="btn btn-link">Mentions Légales</a> / <a href="#/page/sitemap"  class="btn btn-link">plan du site</a></p>
     </div>
 </div>
-
-<!-- Templates -->
-
-    <script type="text/ng-template" id="map">
-        
-        <img src="images/map.jpg" class="img-responsive" />
-
-    </script>

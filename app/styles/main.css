@@ -1241,7 +1241,7 @@ dt {
 dd {
   margin-left: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -2991,7 +2991,7 @@ tbody.collapse.in {
   bottom: 100%;
   margin-bottom: 1px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbar-right .dropdown-menu {
     left: auto;
     right: 0;
@@ -3201,13 +3201,13 @@ tbody.collapse.in {
   margin-bottom: 0px;
   border: 1px solid transparent;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbar {
     border-radius: 0px;
     box-shadow: 0px 0px 10px #333;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbar-header {
     float: left;
   }
@@ -3223,7 +3223,7 @@ tbody.collapse.in {
 .navbar-collapse.in {
   overflow-y: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbar-collapse {
     width: auto;
     border-top: 0;
@@ -3263,7 +3263,7 @@ tbody.collapse.in {
   margin-right: -15px;
   margin-left: -15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .container > .navbar-header,
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,
@@ -3276,7 +3276,7 @@ tbody.collapse.in {
   z-index: 1000;
   border-width: 0 0 1px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbar-static-top {
     border-radius: 0;
   }
@@ -3288,7 +3288,7 @@ tbody.collapse.in {
   left: 0;
   z-index: 1030;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     border-radius: 0;
@@ -3309,7 +3309,15 @@ tbody.collapse.in {
   font-size: 18px;
   line-height: 20px;
   height: 80px;
-  margin-right: 40px;
+  margin-right: 1.5em;
+}
+@media (max-width: 480px) {
+  .navbar-brand {
+    margin-right: 1em;
+  }
+  .navbar-brand img {
+    max-width: 120px;
+  }
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -3338,11 +3346,12 @@ tbody.collapse.in {
   width: 22px;
   height: 2px;
   border-radius: 1px;
+  background: #fff;
 }
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbar-toggle {
     display: none;
   }
@@ -3356,7 +3365,16 @@ tbody.collapse.in {
   line-height: 20px;
   color: #b5cfe5;
   text-transform: uppercase;
-  background: url('../images/menu_sep.png') no-repeat right center;
+}
+@media (max-width: 1199px) {
+  .navbar-nav > li > a {
+    font-size: 0.8em;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-nav > li > a {
+    background: url('../images/menu_sep.png') no-repeat right center;
+  }
 }
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus {
@@ -3369,7 +3387,7 @@ tbody.collapse.in {
 .navbar-nav > li a.active {
   color: #fff;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -3391,7 +3409,7 @@ tbody.collapse.in {
     background-image: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbar-nav {
     float: left;
   }
@@ -3406,6 +3424,7 @@ tbody.collapse.in {
 .navbar-btn {
   margin-top: 23px;
   margin-bottom: 23px;
+  float: left !important;
 }
 .navbar-btn.btn-sm {
   margin-top: 25px;
@@ -3415,18 +3434,23 @@ tbody.collapse.in {
   margin-top: 29px;
   margin-bottom: 29px;
 }
+@media (max-width: 992px) {
+  .navbar-btn {
+    font-size: 0.8em;
+  }
+}
 .navbar-text {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbar-text {
     float: left;
     margin-left: 15px;
     margin-right: 15px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbar-left {
     float: left !important;
   }
@@ -4255,16 +4279,12 @@ button.close {
   padding: 0.2em 0;
 }
 /* Space out content a bit */
-h1,
-h2,
-h3,
-h4 {
-  text-transform: uppercase;
+h1 {
+  font-size: 30px;
+  font-weight: normal;
 }
 @media (min-width: 768px) {
   h1 {
-    font-size: 30px;
-    font-weight: normal;
     background: url('../images/bg-titre.jpg') repeat-x center;
   }
   h1 span {
@@ -4272,6 +4292,11 @@ h4 {
     padding: 8px;
     padding-left: 0;
     background: #fff;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
   }
 }
 h2,
@@ -4283,8 +4308,25 @@ h2 span,
 h3 span {
   font-weight: bold;
 }
+@media (max-width: 768px) {
+  h2,
+  h3 {
+    font-size: 14px;
+  }
+}
 h3 {
   font-size: 16px;
+}
+@media (max-width: 768px) {
+  h3 {
+    font-size: 12px;
+  }
+}
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
 }
 figcaption {
   font-size: 0.8em;

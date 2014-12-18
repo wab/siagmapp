@@ -168,7 +168,15 @@
   font-size: @font-size-large;
   line-height: @line-height-computed;
   height: @navbar-height;
-  margin-right: 40px;
+  margin-right: 1.5em;
+  
+  @media (max-width: @screen-xs-min) {
+    img {
+    max-width: 120px;
+    }
+    margin-right: 1em;
+    
+  }
 
   &:hover,
   &:focus {
@@ -216,6 +224,7 @@
     width: 22px;
     height: 2px;
     border-radius: 1px;
+    background: #fff;
   }
   .icon-bar + .icon-bar {
     margin-top: 4px;
@@ -241,7 +250,12 @@
     line-height: @line-height-computed;
     color: #b5cfe5;
     text-transform: uppercase;
-    background: url('@{img-path}menu_sep.png') no-repeat right center;
+    @media (max-width: @screen-md-max) {
+      font-size: 0.8em;
+    }
+    @media (min-width: @grid-float-breakpoint) {
+      background: url('@{img-path}menu_sep.png') no-repeat right center;
+    }
 
     &:hover, &:focus {
       background-color: transparent;
@@ -304,12 +318,16 @@
 
 .navbar-btn {
   .navbar-vertical-align(@input-height-base);
+  .pull-left();
 
   &.btn-sm {
     .navbar-vertical-align(@input-height-small);
   }
   &.btn-xs {
     .navbar-vertical-align(22);
+  }
+  @media (max-width: @grid-float-breakpoint) {
+    font-size: 0.8em;
   }
 }
 

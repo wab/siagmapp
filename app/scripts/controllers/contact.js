@@ -17,7 +17,6 @@ siagmApp.controller('ContactCtrl',  ['$rootScope', '$scope', '$http' ,
             // check to make sure the form is completely valid
             if (isValid) {
             	$scope.submitted = false;
-                alert('our form is amazing');
 
                $http({
 			        method  : 'POST',
