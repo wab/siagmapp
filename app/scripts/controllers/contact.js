@@ -3,7 +3,10 @@
 siagmApp.controller('ContactCtrl',  ['$rootScope', '$scope', '$http' , 
 	function ($rootScope, $scope, $http) {
 
-		$rootScope.id = 'contact';
+		$scope.$parent.seo = {
+			pageTitle : "Contacts",
+			pageDesc : "Les coordonées et le formalaire de contact pour demander des renseignements"
+		}
 		
 		// create a blank object to hold our form information
 		// $scope will allow this to pass between controller and view

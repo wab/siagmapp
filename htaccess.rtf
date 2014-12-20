@@ -1,0 +1,20 @@
+### If not already activated, activates the RewriteEngine module
+RewriteEngine On
+
+# Don't rewrite files or directories
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Rewrite everything else to index.html to allow html5 state links
+RewriteRule ^ index.html [L]
+
+### If using a .htaccess file, uncomment the following line
+Options +FollowSymLinks
+
+### If the Host header is not correctly set
+###RequestHeader set Host "api.seo4ajax.com"
+                  
+### If a bot requests an escaped URL then proxify the request to SEO4Ajax
+RewriteCond %{QUERY_STRING}  _escaped_fragment_=  [NC]
+RewriteRule ^(.*)$ http://api.seo4ajax.com/7d2e8b08839c3fed34eb329167ba0b3e/$1 [P,QSA,L]
