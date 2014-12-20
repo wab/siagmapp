@@ -8,6 +8,7 @@ siagmApp.controller('ContactCtrl',  ['$rootScope', '$scope', '$http' ,
 		// create a blank object to hold our form information
 		// $scope will allow this to pass between controller and view
 		$scope.formData = {};
+		$scope.formData.newsletter = 'partenaires-newsletter';
 		
 		 // function to submit the form after all validation has occurred            
         $scope.submitForm = function(isValid) {

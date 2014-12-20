@@ -15,18 +15,7 @@
 h1 {
     font-size: 30px;
     font-weight: normal;
-    @media (min-width: @screen-sm-min) {
-        
-        
-        background: url('@{img-path}bg-titre.jpg') repeat-x center;
-        span {
-            display: inline-block;
-            padding: 8px;
-            padding-left: 0;
-            background: #fff;
-        }
-        
-    }
+    
     @media (max-width: @screen-sm-min) {
         font-size: 24px;
     }
@@ -52,6 +41,16 @@ h3 {
 h1, h2, h3, h4 {
     text-transform:  uppercase;
     
+}
+
+.page-header {
+    border-bottom: 2px dotted @brand-info;
+    margin-bottom: 1em;
+    h2 {
+        text-transform: none;
+        color: @brand-info;
+        margin-top: -0.5em;
+    }
 }
 
 figcaption {
@@ -189,4 +188,56 @@ address {
     span {
         font-weight: bold;
     }
+}
+
+.formulaire {
+    padding: 1em;   
+    background: #fcfdfd;
+    border: 6px solid @input-shadow;
+    .box-shadow(0 0 1px #999);
+    form {
+        margin: auto;
+        max-width: 300px;
+    }
+}
+
+.form-group-border {
+    border: 6px solid @input-shadow;
+}
+
+.radio {
+    font-size: 0.85em;
+}
+.send {
+  background-image: linear-gradient(to bottom, #e4f1f6 0%,#d3e8f0 100%);
+  border-radius: 20px;
+  color: #6b97a8;
+  border: 1px solid @input-border;
+  .box-shadow(0 0 4px @brand-info);
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active {
+    background: @brand-primary;
+    color: #fff;
+    box-shadow: none;
+    border-color: @brand-primary;
+  }
+}
+
+.logos-partenaires {
+    min-height: 24px;
+    padding-top: 24px;
+    position: relative;
+    top: -6px;
+    background: url('../images/bg-contact.png') top center no-repeat;
+    p img {
+        display: inline-block;
+        margin-right: 5%;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
 }

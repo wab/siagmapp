@@ -9,7 +9,7 @@ var siagmApp = angular.module('siagmApp', [
     'ngTouch',
     'snap'
   ]);
-siagmApp.config(['$routeProvider', function ($routeProvider) {
+siagmApp.config(['$routeProvider', 'snapRemoteProvider', function ($routeProvider, snapRemoteProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -30,12 +30,9 @@ siagmApp.config(['$routeProvider', function ($routeProvider) {
       .otherwise({
         redirectTo: '/'
       });
+    snapRemoteProvider.globalOptions = {
+      disable: 'right',
+      tapToClose: 'true'
+    };
   }
-])
-
-.config(['snapRemoteProvider', function(snapRemoteProvider) {
-  snapRemoteProvider.globalOptions = {
-    disable: 'right',
-    tapToClose: 'true'
-  };
-}]);
+]);

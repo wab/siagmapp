@@ -1,44 +1,102 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3">
-			<h1><span>contacts</span></h1>
-			<p><strong>PNRGM</strong></p>
-			<address>Parc Naturel Régional du Golfe du Morbihan<br>8, boulevard des îles<br>56000 VANNES</address>
-			<p><a href="http://www.golfe-morbihan.fr">www.golfe-morbihan.fr</a></p>
-			<p><span class="glyphicon glyphicon-phone"></span> 02 97 62 03 03</p>
-			<hr>
+			<div class="page-header">
+				<h1>contactez-nous</h1>
+				<h2>Adresses et coordonnées</h2>
+			</div>
+			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est beatae facilis nemo quas nisi in neque eum at debitis, quos magni pariatur ad esse accusamus aspernatur dolorum vero. Eveniet, perferendis.</p>
+			<div class='well'>
+				<p><strong>PNRGM</strong></p>
+				<address>Parc Naturel Régional du Golfe du Morbihan<br>8, boulevard des îles<br>56000 VANNES</address>
+				<p><a href="http://www.golfe-morbihan.fr">www.golfe-morbihan.fr</a></p>
+				<p><span class="glyphicon glyphicon-phone"></span> 02 97 62 03 03</p>
+			</div>
+
+			<div class="page-header">
+				<h1>formulaire</h1>
+				<h2>Demandez un renseignement en quelques minutes</h2>
+			</div>
 
 
-			<!-- SHOW ERROR/SUCCESS MESSAGES -->
-			<div ng-show="message" class="alert alert-info">{{message}}</div>
-			  
-			  <form name="contactForm" ng-submit="submitForm(contactForm.$valid);" novalidate>
-			  	
-			  	<!-- nom -->
-			    <div class="form-group" ng-class="{ 'has-error' : contactForm.name.$invalid && submitted }">
-			      <label for="name">Votre nom :</label>
-			      <input type="text" name="name" id="name" data-ng-model="formData.name" class="form-control" required />
-			      <p class="help-block" data-ng-show="contactForm.name.$invalid && submitted">Merci de renseigner ce champs !</p>
-			    </div>
+			<div class="formulaire">
+				<!-- messages -->
+				<div ng-show="message" class="alert alert-info">{{message}}</div>
+				  
+				<form name="contactForm" ng-submit="submitForm(contactForm.$valid);" novalidate>
+					
+					<!-- nom -->
+					<div class="form-group" ng-class="{ 'has-error' : contactForm.name.$invalid && submitted }">
+					  <label class="sr-only" for="name">Votre nom et prénom:</label>
+					  <div class="form-group-border">
+					  	<input type="text" name="name" id="name" data-ng-model="formData.name" class="form-control" required placeholder="Votre nom et prénom" />
+					  </div>
+					  <p class="help-block" data-ng-show="contactForm.name.$invalid && submitted">Merci de renseigner ce champs !</p>
+					</div>
 				
-				<!-- email -->
-			    <div class="form-group" ng-class="{ 'has-error' : contactForm.email.$invalid && submitted}">
-			      <label for="email">Votre e-mail :</label>
-			      <input type="email" name="email" id="email" data-ng-model="formData.email" class="form-control" required />
-			      <p ng-show="contactForm.email.$invalid && submitted" class="help-block">Merci de renseigner un email valide !</p>
-			    </div>
+					<!-- email -->
+					<div class="form-group" ng-class="{ 'has-error' : contactForm.email.$invalid && submitted}">
+					  <label class="sr-only" for="email">Votre e-mail :</label>
+					  <div class="form-group-border">
+					  	<input type="email" name="email" id="email" data-ng-model="formData.email" class="form-control" placeholder="Votre email" required />
+					  </div>
+					  <p ng-show="contactForm.email.$invalid && submitted" class="help-block">Merci de renseigner un email valide !</p>
+					</div>
+
+					<!-- subject -->
+					<div class="form-group" ng-class="{ 'has-error' : contactForm.subject.$invalid && submitted}">
+					  <label class="sr-only" for="email">sujet :</label>
+					  <div class="form-group-border">
+					  	<select class="form-control" id="subject" name="subject" data-ng-model="formData.subject" required>
+					  		<option value="" disabled selected>Sélectionnnez un sujet dans la liste</option>
+					  		<option value="sujet 1">Sujet 1</option>
+					  		<option value="sujet 2">Sujet 2</option>
+					  		<option value="sujet 3">Sujet 3</option>
+					  	</select>
+					  </div>
+					  <p ng-show="contactForm.subject.$invalid && submitted" class="help-block">Merci de choisir un sujet !</p>
+					</div>
 				
-				<!-- message -->
-			    <div class="form-group" ng-class="{ 'has-error' : contactForm.contenu.$invalid && submitted}">
-			      <label for="contenu">Votre message :</label>
-			      <textarea name="contenu" id="contenu" data-ng-model="formData.contenu" class="form-control" required></textarea>
-			      <p ng-show="contactForm.contenu.$invalid && submitted" class="help-block">Merci de renseigner un message !</p>
-			    </div>
+					<!-- message -->
+					<div class="form-group" ng-class="{ 'has-error' : contactForm.contenu.$invalid && submitted}">
+					  <label class="sr-only" for="contenu">Votre message :</label>
+					  <div class="form-group-border">
+					  	<textarea name="contenu" id="contenu" data-ng-model="formData.contenu" class="form-control" rows="8" placeholder="Votre message" required></textarea>
+					  </div>
+					  <p ng-show="contactForm.contenu.$invalid && submitted" class="help-block">Merci de renseigner un message !</p>
+					</div>
+
+					<!-- newsletter -->
+					<div class="form-group" ng-class="{ 'has-error' : contactForm.newsletter.$invalid && submitted}">
+						<div class="radio text-muted">
+						  <label>
+						    <input type="radio" name="newsletter" id="newsletter" value="abonnement infos Siagm" data-ng-model="formData.newsletter">
+						    J’accepte de recevoir les informations du SIAGM
+						  </label>
+						  <label>
+						    <input type="radio" name="newsletter" id="newsletter" value="abonnement infos Siagm et partenaires" data-ng-model="formData.newsletter" checked>
+						    J’accepte de recevoir les informations du SIAGM &amp; des partentaires du Parc Naturel Régional du Golfe du Morbihan
+						  </label>
+						  <label>
+						    <input type="radio" name="newsletter" id="newsletter" value="pas d'abonnement" data-ng-model="formData.newsletter">
+						    Ne pas recevoir d'informations
+						  </label>
+						</div>
+					</div>
+
 				
-				<!-- submit -->
-			    <button type="submit" class="btn btn-primary"><span>Envoyer</span></button>
-			  
-			  </form>		
+					<!-- submit -->
+					<p class="text-center">
+						<button type="submit" class="btn send">Envoyer votre message</button>
+					</p>
+					
+				
+				</form>
+			</div>
+			<div class="logos-partenaires">
+				<p class="text-info text-uppercase">merci à nos partenaires</p>
+				<p class="text-center"><img src="images/partenaires/europe.png"><img src="images/partenaires/europe-bretagne.png"><img src="images/partenaires/etat.png"><img src="images/partenaires/region-bretagne.png"><img src="images/partenaires/pnrgm.png"></p>
+			</div>
 		</div><!-- col -->
 	</div><!-- row -->
 </div><!-- container -->

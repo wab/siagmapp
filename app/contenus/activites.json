@@ -21,13 +21,13 @@
 				"Soyez équipé d’un gilet de sauvetage",
 				"Respectez les élevages de coquillages, balisés par des perches"
 			],
-			"autre" : "La navigation au-dessus des parcs présente des dangers pour les navires et les personnes"
+			"autre" : "<p>La navigation au-dessus des parcs présente des dangers pour les navires et les personnes</p>"
 		},
 
 		"image" : {
 			"src" : "images/thumb.jpg",
 			"alt" : "texte alternatif",
-			"caption" : "légende"
+			"caption" : "kayakistes en randonnée"
 		}
 		
 	},
@@ -57,7 +57,7 @@
 		"image" : {
 			"src" : "images/thumb.jpg",
 			"alt" : "texte alternatif",
-			"caption" : "légende"
+			"caption" : "kitesurfeur dans le Golfe du Morbihan"
 		}
 		
 	},
@@ -88,7 +88,7 @@
 		"image" : {
 			"src" : "images/thumb.jpg",
 			"alt" : "texte alternatif",
-			"caption" : "légende"
+			"caption" : "Pêcheurs à pied de loisirs à Locmariaquer"
 		}
 		
 	},
@@ -120,7 +120,7 @@
 		"image" : {
 			"src" : "images/thumb.jpg",
 			"alt" : "texte alternatif",
-			"caption" : "légende"
+			"caption" : "pêche à la ligne depuis une embarcation"
 		}
 		
 	},
@@ -150,7 +150,7 @@
 		"image" : {
 			"src" : "images/thumb.jpg",
 			"alt" : "texte alternatif",
-			"caption" : "légende"
+			"caption" : "bateaux à moteur en navigation"
 		}
 		
 	},
@@ -180,7 +180,7 @@
 		"image" : {
 			"src" : "images/thumb.jpg",
 			"alt" : "texte alternatif",
-			"caption" : "légende"
+			"caption" : "voiliers dans une zone de mouillage"
 		}
 		
 	},
@@ -211,7 +211,7 @@
 		"image" : {
 			"src" : "images/thumb.jpg",
 			"alt" : "texte alternatif",
-			"caption" : "légende"
+			"caption" : "catamaran au mouillage entre 2 cours de voile"
 		}
 		
 	},
@@ -238,7 +238,7 @@
 		"image" : {
 			"src" : "images/thumb.jpg",
 			"alt" : "texte alternatif",
-			"caption" : "légende"
+			"caption" : "faune sous-marine caractéristique du Golfe du Morbihan"
 		}
 		
 	},
@@ -253,7 +253,7 @@
 		"image" : {
 			"src" : "images/thumb.jpg",
 			"alt" : "texte alternatif",
-			"caption" : "légende"
+			"caption" : "tables ostréicoles sur l’estran du Golfe"
 		}
 		
 	},
@@ -268,7 +268,7 @@
 		"image" : {
 			"src" : "images/thumb.jpg",
 			"alt" : "texte alternatif",
-			"caption" : "légende"
+			"caption" : "pêcheurs à pied professionnels à la palourde"
 		}
 		
 	},
@@ -283,7 +283,7 @@
 		"image" : {
 			"src" : "images/thumb.jpg",
 			"alt" : "texte alternatif",
-			"caption" : "légende"
+			"caption" : "mettre les croquis présents dans le guide papier"
 		}
 		
 	},
@@ -298,7 +298,7 @@
 		"image" : {
 			"src" : "images/thumb.jpg",
 			"alt" : "texte alternatif",
-			"caption" : "légende"
+			"caption" : "passage maritime entre Baden et l’Île-aux-Moines"
 		}
 		
 	}

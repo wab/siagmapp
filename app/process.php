@@ -16,10 +16,22 @@ $data 			= array(); 		// array to pass back data
 		$data['email'] = $_POST['email'];
 	endif;
 
+	if (empty($_POST['subject'])):
+		$errors['subject'] = 'param subject vide';
+	else: 
+		$data['subject'] = $_POST['subject'];
+	endif;
+
 	if (empty($_POST['contenu'])):
 		$errors['contenu'] = 'param contenu vide';
 	else: 
 		$data['contenu'] = $_POST['contenu'];
+	endif;
+
+	if (empty($_POST['newsletter'])):
+		$errors['newsletter'] = 'param newsletter vide';
+	else: 
+		$data['newsletter'] = $_POST['newsletter'];
 	endif;
 
 // return a response ===========================================================
@@ -38,9 +50,9 @@ $data 			= array(); 		// array to pass back data
 		
 		$mail->From = $_POST['email'];
 		$mail->FromName = $_POST['name'];
-		$mail->addAddress('wab2com@gmail.com', 'contact siagm');     // Add a recipient
-		$mail->Subject = 'SiagmApp [formulaire de contact]';
-		$mail->Body    = $_POST['contenu'];
+		$mail->addAddress('contact@golfe-morbihan.com', 'contact siagm');     // Add a recipient
+		$mail->Subject = $_POST['subject'];
+		$mail->Body    = $_POST['contenu']."<br>newsletter : ".$_POST['newsletter'];
 		$mail->AltBody = $_POST['contenu'];
 
 		if(!$mail->send()) {

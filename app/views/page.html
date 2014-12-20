@@ -5,7 +5,9 @@
         <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
 
             <div class="page">
-                <h1><span>{{page.title}}</span></h1>
+                <div class="page-header">
+                    <h1><span>{{page.title}}</span></h1>
+                </div>
                 <figure ng-show="page.image" class="thumbnail">
                     <img src="{{page.image.src}}" alt="{{page.image.alt}}" class="img-responsive">
                     <figcaption class="text-muted">{{page.image.caption}}</figcaption>
