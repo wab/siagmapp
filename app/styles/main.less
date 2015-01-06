@@ -78,8 +78,10 @@ figcaption {
     margin-left: 0;
 }
 section {
-    padding: 40px 0;
-    min-height: 800px;
+    @media (min-width: @screen-md-min) {
+        padding: 40px 0;
+        min-height: 800px;
+    }
 }
 .main {
     padding-bottom:  20px;
@@ -177,6 +179,10 @@ section {
     border-radius: 6px;
     background: #7484a9;
     color: #fff;
+}
+
+figcaption:first-letter {
+    text-transform: capitalize;
 }
 
 p {

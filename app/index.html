@@ -2,8 +2,8 @@
 <html class="no-js" ng-app="siagmApp">
   <head>
     <meta charset="utf-8">
-    <base href="/">
-    <meta name="fragment" content="!">  
+    <!-- <base href="/"> -->
+    <!-- <meta name="fragment" content="!">  --> 
     <title>{{seo.pageTitle}} - Cap sur la petite mer</title>
     <meta name="description" content="{{seo.pageDesc}}">
     <meta name="viewport" content="width=device-width">
@@ -41,17 +41,12 @@
     <!-- endbuild -->
     
   </head>
-  <body>
+  <body data-status="{{ status }}">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div snap-drawer>
-
-       <nav class="menuActivites" role="navigation" ng-controller="SnapmenuCtrl" ng-include="'views/snapmenu.html'" nav-menu="active">
-       </nav>
-
-    </div>
+    
 
     <div snap-content class="wrapper" >
 
@@ -60,6 +55,13 @@
         <div ng-view="" role="main" class="main"></div>
 
         <div ng-include="'views/footer.html'" ng-controller="FooterCtrl"></div>
+
+    </div>
+
+    <div snap-drawer>
+
+       <nav class="menuActivites" role="navigation" ng-controller="SnapmenuCtrl" ng-include="'views/snapmenu.html'" nav-menu="active">
+       </nav>
 
     </div>
 

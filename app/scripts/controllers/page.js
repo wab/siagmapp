@@ -10,6 +10,6 @@ siagmApp.controller('PageCtrl',  ['$scope', '$filter', 'DataPages', '$routeParam
 			$scope.$parent.seo.pageDesc = $scope.page.chapo;
 		});
 
-		
+		$scope.status = 'ready';
 
 	}]);

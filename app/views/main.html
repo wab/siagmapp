@@ -7,7 +7,7 @@
     </div>
     
     <div class="container hidden-md hidden-lg">
-        <h1><img src="images/header-mobile.jpg" class="img-responsive img-rounded"></h1>
+        <p class="h2"><img src="images/header-mobile.jpg" class="img-responsive img-rounded"></p>
     </div>
 
 </header>
@@ -21,7 +21,7 @@
         </div>
 
         <div class="row text-center">
-            <div ng-repeat="activite in activites" class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="activite/{{activite.id}}" class="thumbnail"><img src="images/thumbs/{{activite.id}}.jpg" class="img-responsive"  /></a><p class="thumb-caption">{{activite.title}}</p></div>
+            <div ng-repeat="activite in activites" class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#!/activite/{{activite.id}}" class="thumbnail"><img src="images/thumbs/{{activite.id}}.jpg" class="img-responsive"  /></a><p class="thumb-caption">{{activite.title}}</p></div>
         </div>
 
     </div>

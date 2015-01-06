@@ -3560,6 +3560,7 @@ a.thumbnail.active {
 @media (max-width: 480px) {
   .thumb-caption {
     font-size: 11px;
+    text-transform: capitalize;
   }
 }
 .thumbnail-border {
@@ -4372,9 +4373,11 @@ figcaption {
   margin: 0.5em 1em;
   margin-left: 0;
 }
-section {
-  padding: 40px 0;
-  min-height: 800px;
+@media (min-width: 992px) {
+  section {
+    padding: 40px 0;
+    min-height: 800px;
+  }
 }
 .main {
   padding-bottom: 20px;
@@ -4474,6 +4477,9 @@ section {
   border-radius: 6px;
   background: #7484a9;
   color: #fff;
+}
+figcaption:first-letter {
+  text-transform: capitalize;
 }
 p:before,
 p:after {

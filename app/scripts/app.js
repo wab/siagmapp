@@ -9,8 +9,8 @@ var siagmApp = angular.module('siagmApp', [
     'ngTouch',
     'snap'
   ]);
-siagmApp.config(['$routeProvider', 'snapRemoteProvider', '$locationProvider', function ($routeProvider, snapRemoteProvider, $locationProvider) {
-    $routeProvider
+siagmApp.config(['$routeProvider', 'snapRemoteProvider', '$locationProvider', function ($route, snapRemoteProvider, $location) {
+    $route
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
@@ -34,7 +34,7 @@ siagmApp.config(['$routeProvider', 'snapRemoteProvider', '$locationProvider', fu
       disable: 'right',
       tapToClose: 'true'
     };
-    $locationProvider.html5Mode(true);
-    $locationProvider.hashPrefix('!');
+    // $location.html5Mode(true);
+    $location.hashPrefix('!');
   }
 ]);

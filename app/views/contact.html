@@ -5,7 +5,7 @@
 				<h1>contactez-nous</h1>
 				<h2>Adresses et coordonnées</h2>
 			</div>
-			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est beatae facilis nemo quas nisi in neque eum at debitis, quos magni pariatur ad esse accusamus aspernatur dolorum vero. Eveniet, perferendis.</p>
+			<p class="lead">Vous souhaitez contacter les équipes Cap Sur La Petite Mer ? Remplissez le formulaire ci-dessous. Nos coordonnées complètes sur cette page.</p>
 			<div class='well'>
 				<p><strong>PNRGM</strong></p>
 				<address>Parc Naturel Régional du Golfe du Morbihan<br>8, boulevard des îles<br>56000 VANNES</address>
@@ -49,9 +49,11 @@
 					  <div class="form-group-border">
 					  	<select class="form-control" id="subject" name="subject" data-ng-model="formData.subject" required>
 					  		<option value="" disabled selected>Sélectionnnez un sujet dans la liste</option>
-					  		<option value="sujet 1">Sujet 1</option>
-					  		<option value="sujet 2">Sujet 2</option>
-					  		<option value="sujet 3">Sujet 3</option>
+					  		<option value="Législation">Législation</option>
+					  		<option value="Les bonnes pratiques en mer">Les bonnes pratiques en mer</option>
+					  		<option value="Activités">Activités</option>
+					  		<option value="Sécurité">Sécurité</option>
+					  		<option value="Autre">Autre</option>
 					  	</select>
 					  </div>
 					  <p ng-show="contactForm.subject.$invalid && submitted" class="help-block">Merci de choisir un sujet !</p>
@@ -70,12 +72,12 @@
 					<div class="form-group" ng-class="{ 'has-error' : contactForm.newsletter.$invalid && submitted}">
 						<div class="radio text-muted">
 						  <label>
-						    <input type="radio" name="newsletter" id="newsletter" value="abonnement infos Siagm" data-ng-model="formData.newsletter">
-						    J’accepte de recevoir les informations du SIAGM
+						    <input type="radio" name="newsletter" id="newsletter" value="abonnement infos PNRGM" data-ng-model="formData.newsletter">
+						    J’accepte de recevoir les informations du Parc Naturel Régional du Golfe du Morbihan
 						  </label>
 						  <label>
 						    <input type="radio" name="newsletter" id="newsletter" value="abonnement infos Siagm et partenaires" data-ng-model="formData.newsletter" checked>
-						    J’accepte de recevoir les informations du SIAGM &amp; des partentaires du Parc Naturel Régional du Golfe du Morbihan
+						    J’accepte de recevoir les informations du Parc Naturel Régional du Golfe du Morbihan &amp; des partentaires
 						  </label>
 						  <label>
 						    <input type="radio" name="newsletter" id="newsletter" value="pas d'abonnement" data-ng-model="formData.newsletter">

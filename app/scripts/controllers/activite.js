@@ -9,5 +9,7 @@ siagmApp.controller('ActiviteCtrl',  ['$rootScope','$scope', '$filter', 'Datacti
 			$scope.$parent.seo.pageTitle = $scope.page.title;
 			$scope.$parent.seo.pageDesc = $scope.page.contenu.chapo;
 		});
+
+		$scope.status = 'ready';
 		
 	}]);

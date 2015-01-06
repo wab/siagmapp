@@ -50,7 +50,6 @@ siagmApp.controller('ContactCtrl',  ['$rootScope', '$scope', '$http' ,
 
         };
 
-        
-
+        $scope.status = 'ready';
 
 	}]);

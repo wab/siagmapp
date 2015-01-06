@@ -14,4 +14,6 @@ siagmApp.controller('MainCtrl',  ['$scope', 'Datactivites' ,
 
 		}
 
+		$scope.status = 'ready';
+
 }]);

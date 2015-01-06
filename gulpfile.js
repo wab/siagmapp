@@ -13,6 +13,7 @@ var app = './app/';
   copy           = require('gulp-copy'),
   htmlmin        = require('gulp-htmlmin'),
   imagemin       = require('gulp-imagemin'),
+  zip = require('gulp-zip'),
   useref         = require('gulp-useref');
 
 gulp.task('bower', function() {
@@ -68,11 +69,11 @@ gulp.task('watch', function() {
 });
 
 gulp.task('copy', function() {
-  gulp.src(app + '*.*')
-    .pipe(gulp.dest('dist'));
   gulp.src(app +'fonts/**/*.{ttf,woff,eot,svg}')
     .pipe(gulp.dest('dist/fonts'));
-   gulp.src(app +'contenus/*.json')
+  gulp.src(['app/*', '!app/index.html', '!htaccess.rtf', '.htaccess'])
+    .pipe(gulp.dest('dist'));
+  gulp.src(app +'contenus/*.json')
     .pipe(gulp.dest('dist/contenus'));
   gulp.src('app/views/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
@@ -97,4 +98,10 @@ gulp.task('build', ['clean', 'less', 'copy'],  function() {
        .pipe(useref())
        .pipe(gulp.dest('dist'));
 
+});
+
+gulp.task('archive', ['build'], function() {
+  return gulp.src('dist/**/*')
+    .pipe(zip('siagmapp.zip'))
+    .pipe(gulp.dest('livraison'));
 });
